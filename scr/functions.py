@@ -15,6 +15,13 @@ def load_year(path):
 
     return year 
 
+def load_year2(path):
+    route = cf.data_dir.replace('/scr', '') + path
+   
+    year = pd.read_excel(route)
+
+    return year 
+
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -48,6 +55,7 @@ def number_correction(df):
     return df
 
 def name_correction(df): 
+  
     for i, row in df.iterrows():
         row['Oficina'] = row['Oficina'].replace('.', '')
         row['Oficina'] = row['Oficina'].replace(',', '')
@@ -97,6 +105,37 @@ def get_mun(df):
         mun.append(row['Oficina'] )
 
     return mun
+
+def format_mun(lst): 
+    mun = []
+    for i in lst: 
+        i = i.replace('.', '')
+        i = i .replace(',', '')
+        i = i .replace('•', '')
+        i = i .replace('%', '')
+        i = i .replace(':', '')
+        i = i .replace('*', '')
+        i = i .replace('á', 'a')
+        i = i .replace('é', 'e')
+        i = i .replace('í', 'i')
+        i = i .replace('ó', 'o')
+        i = i .replace('ú', 'u')
+
+        i = i.lower()
+        mun.append(i)
+
+    return mun
+
+def assign(df, name, lst):
+    df.loc[:, name] = lst 
+
+    return df
+
+def rearrange(df, name): 
+    first_col = df.pop(name)
+    df.insert(0, name, first_col)
+
+    return df
 
 '''
 CLEAN DATABASES
