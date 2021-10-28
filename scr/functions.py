@@ -26,6 +26,9 @@ def format_numbers(df, col):
         row[col] =  row[col].replace('•', '')
         row[col] =  row[col].replace('%', '')
         row[col] =  row[col].replace(':', '')
+        row[col] =  row[col].replace(' ', '')
+        row[col] =  row[col].replace('I', '1')
+        row[col] =  row[col].replace('l', '1')
   
     return df
 
@@ -99,7 +102,15 @@ def get_mun(df):
 CLEAN DATABASES
 '''
 
-
+'''
+COMPARE FUNCTIONS
+'''
+def compare_mun(lst1, lst2): 
+    diff = []
+    for i in lst1: 
+        if i not in lst2: 
+            diff.append(i)
+    return diff 
 
 
 '''
