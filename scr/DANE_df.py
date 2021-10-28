@@ -1,5 +1,5 @@
 #%%
-import config as cf
+from pathlib import Path
 import pandas as pd
 
 '''
@@ -7,7 +7,10 @@ LOADING FUNCTIONS
 '''
 
 def load_year(path):
-    route = cf.data_dir + path
+    file_dir = Path("DANE_df.py").parent.absolute()
+    print(file_dir)
+    data_dir = str(file_dir) + '/input/'
+    route = data_dir + path
     year = pd.read_csv(route)
     return year 
 
@@ -96,6 +99,8 @@ year_1953 = check_total(year_1953)
 
 mun_1953 = get_mun(year_1953)
 
-# None
 
+'''
+EXPORT FUNCTIONS
+'''
 
