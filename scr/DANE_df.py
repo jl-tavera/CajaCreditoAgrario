@@ -44,4 +44,14 @@ year_1954 = f.number_correction(year_1954)
 year_1954 = f.check_total(year_1954)
 mun_1954 = f.get_mun(year_1954)
 
-# diff = f.compare_mun(mun_1952, mun_1954)
+'''
+1955
+'''
+
+year_1955 = f.load_year('DANE/1955.csv')
+year_1955 = f.name_correction(year_1955)
+year_1955 = f.number_correction(year_1955)
+year_1955 = f.check_total(year_1955)
+
+
+
