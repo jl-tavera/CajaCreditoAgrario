@@ -17,7 +17,7 @@ year_1953 = load_year('DANE/1953.csv')
 
 
 '''
-FORMAT FUNCTIONS
+FORMAT & CLEANING FUNCTIONS
 '''
 
 def format_numbers(df, col): 
@@ -87,15 +87,15 @@ year_1952 = name_correction(year_1952)
 year_1952 = number_correction(year_1952)
 year_1952 = check_total(year_1952)
 
-year_1952.to_csv('1952')
 mun_1952 = get_mun(year_1952)
 
 year_1953 = name_correction(year_1953)
 year_1953 = number_correction(year_1953)
 year_1953 = check_total(year_1953)
 
-year_1953.to_csv('1953')
+
 mun_1953 = get_mun(year_1953)
 
+# None
 
 
