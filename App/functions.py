@@ -9,14 +9,14 @@ LOADING FUNCTIONS
 '''
 
 def load_year(path):
-    route = cf.data_dir.replace('/App', '') + path
+    route = cf.data_dir.replace('/scr', '') + path
    
     year = pd.read_csv(route)
 
     return year 
 
 def load_year2(path):
-    route = cf.data_dir.replace('/App', '') + path
+    route = cf.data_dir.replace('/scr', '') + path
    
     year = pd.read_excel(route)
 
@@ -157,7 +157,7 @@ EXPORT FUNCTIONS
 '''
 
 def export(df, name): 
-    route = cf.export_dir.replace('/App', '')
+    route = cf.export_dir.replace('/scr', '')
     df.to_csv( route + str(name)+ '.csv')
 
     return 
