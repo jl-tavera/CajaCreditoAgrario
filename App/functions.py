@@ -41,39 +41,44 @@ def format_numbers(df, col):
 
 
 def number_correction(df):
+
+    col_names = ['Oficina', 'Departamento']
+
     for col in df.columns: 
          df[col] = df[col].apply(str)
 
     for col in df.columns: 
-        if col != 'Oficina':
+        if col not in col_names:
             format_numbers(df, col)
 
     for col in df.columns: 
-       if col != 'Oficina':
+       if col not in col_names:
          df[col] = pd.to_numeric(df[col])
 
     return df
 
 def name_correction(df): 
-  
-    for i, row in df.iterrows():
-        row['Oficina'] = row['Oficina'].replace('.', '')
-        row['Oficina'] = row['Oficina'].replace(',', '')
-        row['Oficina'] = row['Oficina'].replace('•', '')
-        row['Oficina'] = row['Oficina'].replace('%', '')
-        row['Oficina'] = row['Oficina'].replace(':', '')
-        row['Oficina'] = row['Oficina'].replace('*', '')
-        row['Oficina'] = row['Oficina'].replace('á', 'a')
-        row['Oficina'] = row['Oficina'].replace('é', 'e')
-        row['Oficina'] = row['Oficina'].replace('í', 'i')
-        row['Oficina'] = row['Oficina'].replace('ó', 'o')
-        row['Oficina'] = row['Oficina'].replace('ú', 'u')
-        
-        if row['Oficina'][0] == ' ': 
-            row['Oficina'] = row['Oficina'][1:]
 
-        lower = row['Oficina'].lower()
-        row['Oficina'] = lower
+    col_names = ['Oficina', 'Departamento']
+    for name in col_names: 
+        for i, row in df.iterrows():
+            row[name] = row[name].replace('.', '')
+            row[name] = row[name].replace(',', '')
+            row[name] = row[name].replace('•', '')
+            row[name] = row[name].replace('%', '')
+            row[name] = row[name].replace(':', '')
+            row[name] = row[name].replace('*', '')
+            row[name] = row[name].replace('á', 'a')
+            row[name] = row[name].replace('é', 'e')
+            row[name] = row[name].replace('í', 'i')
+            row[name] = row[name].replace('ó', 'o')
+            row[name] = row[name].replace('ú', 'u')
+            
+            if row[name][0] == ' ': 
+                row[name] = row[name][1:]
+
+            lower = row[name].lower()
+            row[name] = lower
 
     return df
 
@@ -96,18 +101,21 @@ def check_total(df):
     return df
 
 def lower(df): 
-    df['Oficina'].str.lower()
+
+    col_names = ['Oficina', 'Departamento']
+    for name in col_names: 
+        df[name].str.lower()
     return df
 
-def get_mun(df): 
-    mun = []
+def get_names(df, col): 
+    names = []
     for i, row in df.iterrows():
-        mun.append(row['Oficina'] )
+        names.append(row[col] )
 
-    return mun
+    return names
 
-def format_mun(lst): 
-    mun = []
+def format_name(lst): 
+    names = []
     for i in lst: 
         i = i.replace('.', '')
         i = i .replace(',', '')
@@ -122,18 +130,18 @@ def format_mun(lst):
         i = i .replace('ú', 'u')
 
         i = i.lower()
-        mun.append(i)
+        names.append(i)
 
-    return mun
+    return names
 
 def assign(df, name, lst):
     df.loc[:, name] = lst 
 
     return df
 
-def rearrange(df, name): 
+def rearrange(df, name, pos): 
     first_col = df.pop(name)
-    df.insert(0, name, first_col)
+    df.insert(pos, name, first_col)
 
     return df
 
