@@ -72,7 +72,21 @@ mun_1955 = fx.getNames(year_1955, 'Oficina')
 
 fx.export(year_1955, '1955_clean')
 
-#    (_    ,_,    _)
+'''
+1955
+'''
+
+year_1956 = fx.loadYearCSV('DANE/1956.csv')
+
+year_1956 = fx.nameCorrection(year_1956)
+year_1956 = fx.numberCorrection(year_1956)
+year_1956 = fx.checkTotal(year_1956)
+
+mun_1956 = fx.getNames(year_1956, 'Oficina')
+
+fx.export(year_1956, '1956_clean')
+
+#    (_    /_\    _)
 #    / `'--) (--'` \
 #   /  _,-'\_/'-,_  \
 #  /.-'     "     '-.\
