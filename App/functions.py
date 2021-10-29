@@ -9,15 +9,13 @@ LOADING FUNCTIONS
 '''
 
 def load_year(path):
-    route = cf.data_dir.replace('/App', '') + path
-   
+    route = cf.data_dir.replace('/App', '') + path 
     year = pd.read_csv(route)
 
     return year 
 
 def load_year2(path):
-    route = cf.data_dir.replace('/App', '') + path
-   
+    route = cf.data_dir.replace('/App', '') + path 
     year = pd.read_excel(route)
 
     return year 
