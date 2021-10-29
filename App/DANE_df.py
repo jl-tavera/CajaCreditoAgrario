@@ -64,11 +64,14 @@ f.export(year_1954, '1954_clean')
 1955
 '''
 
-# year_1955 = f.load_year('DANE/1955.csv')
+year_1955 = f.load_year('DANE/1955.csv')
 
-# year_1955 = f.name_correction(year_1955)
-# year_1955 = f.number_correction(year_1955)
-# year_1955 = f.check_total(year_1955)
+year_1955 = f.name_correction(year_1955)
+year_1955 = f.number_correction(year_1955)
+year_1955 = f.check_total(year_1955)
 
+mun_1955 = f.get_names(year_1955, 'Oficina')
+
+f.export(year_1955, '1955_clean')
 
 
