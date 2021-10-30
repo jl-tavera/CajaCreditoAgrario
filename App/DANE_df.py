@@ -76,29 +76,33 @@ DATA PREPARATION
 1956
 '''
 
-year_1956 = fx.loadYearCSV('DANE/1956.csv')
+# year_1956 = fx.loadYearCSV('DANE/1956.csv')
 
-year_1956 = fx.nameCorrection(year_1956)
-year_1956 = fx.numberCorrection(year_1956)
-year_1956 = fx.checkTotal(year_1956)
+# year_1956 = fx.nameCorrection(year_1956)
+# year_1956 = fx.numberCorrection(year_1956)
+# year_1956 = fx.checkTotal(year_1956)
 
-mun_1956 = fx.getNames(year_1956, 'Oficina')
+# mun_1956 = fx.getNames(year_1956, 'Oficina')
 
-fx.export(year_1956, '1956_clean')
+# fx.export(year_1956, '1956_clean')
 
 '''
 1957
 '''
 
-year_1957 = fx.loadYearCSV('DANE/1957.csv')
+# year_1957 = fx.loadYearCSV('DANE/1957.csv')
 
-year_1957 = fx.nameCorrection(year_1957)
-year_1957 = fx.numberCorrection(year_1957)
-year_1957 = fx.checkTotal(year_1957)
+# year_1957 = fx.nameCorrection(year_1957)
+# year_1957 = fx.numberCorrection(year_1957)
+# year_1957 = fx.checkTotal(year_1957)
 
-mun_1957 = fx.getNames(year_1957, 'Oficina')
+# mun_1957 = fx.getNames(year_1957, 'Oficina')
 
-print(fx.compareMun(mun_1956, mun_1957))
+# fx.export(year_1957, '1957_clean')
+
+'''
+1958
+'''
 
 
 #    (_    /_\    _)
