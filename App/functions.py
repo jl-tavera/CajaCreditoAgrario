@@ -91,6 +91,14 @@ def checkTotal(df):
         (df['CP - Numero'] + df['MP - Numero']) - df['T - Numero'])
     return df
 
+def checkTotalLP(df):
+    df['Check - Valor'] = (
+        (df['CP - Valor'] + df['MP - Valor'] + df['LP - Valor']) 
+                                - df['T - Valor'])
+    df['Check - Numero'] = (
+        (df['CP - Numero'] + df['MP - Numero'] + df['LP - Numero'])
+                                 - df['T - Numero'])
+    return df
 
 def lower(df):
 
