@@ -104,53 +104,85 @@ DATA PREPARATION
 1958
 '''
 
-year_1958 = fx.loadYearXLSX('DANE/1958.xlsx')
+# year_1958 = fx.loadYearXLSX('DANE/1958.xlsx')
 
-year_1958 = fx.numberCorrection(year_1958)
-year_1958 = fx.checkTotalLP(year_1958)
+# year_1958 = fx.numberCorrection(year_1958)
+# year_1958 = fx.checkTotalLP(year_1958)
 
-mun_1958 = fx.getNames(year_1958, 'Oficina')
-mun_1958 = fx.formatName(mun_1958)
+# mun_1958 = fx.getNames(year_1958, 'Oficina')
+# mun_1958 = fx.formatName(mun_1958)
 
-dep_1958 = fx.getNames(year_1958, 'Departamento')
-dep_1958 = fx.formatName(dep_1958)
+# dep_1958 = fx.getNames(year_1958, 'Departamento')
+# dep_1958 = fx.formatName(dep_1958)
 
-year_1958 = year_1958.drop('Oficina', 1)
-year_1958 = year_1958.drop('Departamento', 1)
+# year_1958 = year_1958.drop('Oficina', 1)
+# year_1958 = year_1958.drop('Departamento', 1)
 
-year_1958 = fx.assign(year_1958, 'Oficina', mun_1958)
-year_1958 = fx.assign(year_1958, 'Departamento', dep_1958)
+# year_1958 = fx.assign(year_1958, 'Oficina', mun_1958)
+# year_1958 = fx.assign(year_1958, 'Departamento', dep_1958)
 
-year_1958 = fx.rearrange(year_1958, 'Oficina', 0)
-year_1958 = fx.rearrange(year_1958, 'Departamento', 1)
+# year_1958 = fx.rearrange(year_1958, 'Oficina', 0)
+# year_1958 = fx.rearrange(year_1958, 'Departamento', 1)
 
-fx.export(year_1958, '1958_clean')
+# fx.export(year_1958, '1958_clean')
 
 '''
 1959
 '''
 
-year_1959 = fx.loadYearXLSX('DANE/1959.xlsx')
+# year_1959 = fx.loadYearXLSX('DANE/1959.xlsx')
 
-year_1959 = fx.numberCorrection(year_1959)
-year_1959 = fx.checkTotalLP(year_1959)
+# year_1959 = fx.numberCorrection(year_1959)
+# year_1959 = fx.checkTotalLP(year_1959)
 
-mun_1959 = fx.getNames(year_1959, 'Oficina')
-mun_1959 = fx.formatName(mun_1959)
+# mun_1959 = fx.getNames(year_1959, 'Oficina')
+# mun_1959 = fx.formatName(mun_1959)
 
-dep_1959 = fx.getNames(year_1959, 'Departamento')
-dep_1959 = fx.formatName(dep_1959)
+# dep_1959 = fx.getNames(year_1959, 'Departamento')
+# dep_1959 = fx.formatName(dep_1959)
 
-year_1959 = year_1959.drop('Oficina', 1)
-year_1959 = year_1959.drop('Departamento', 1)
+# year_1959 = year_1959.drop('Oficina', 1)
+# year_1959 = year_1959.drop('Departamento', 1)
 
-year_1959 = fx.assign(year_1959, 'Oficina', mun_1959)
-year_1959 = fx.assign(year_1959, 'Departamento', dep_1959)
+# year_1959 = fx.assign(year_1959, 'Oficina', mun_1959)
+# year_1959 = fx.assign(year_1959, 'Departamento', dep_1959)
 
-year_1959 = fx.rearrange(year_1959, 'Oficina', 0)
-year_1959 = fx.rearrange(year_1959, 'Departamento', 1)
+# year_1959 = fx.rearrange(year_1959, 'Oficina', 0)
+# year_1959 = fx.rearrange(year_1959, 'Departamento', 1)
 
-fx.export(year_1959, '1959_clean')
+# fx.export(year_1959, '1959_clean')
+
+'''
+1960
+'''
+
+year_1960 = fx.loadYearXLSX('DANE/1960.xlsx')
+year_1960 = fx.numberCorrection(year_1960)
+
+num_1960 = fx.getNames(year_1960, 'CP - Numero')
+num_1960 = fx.formatDecimal(num_1960)
+
+mun_1960 = fx.getNames(year_1960, 'Oficina')
+mun_1960 = fx.formatName(mun_1960)
+
+dep_1960 = fx.getNames(year_1960, 'Departamento')
+dep_1960 = fx.formatName(dep_1960)
+
+year_1960 = year_1960.drop('Oficina', 1)
+year_1960 = year_1960.drop('Departamento', 1)
+year_1960 = year_1960.drop('CP - Numero', 1)
+
+year_1960 = fx.assign(year_1960, 'Oficina', mun_1960)
+year_1960 = fx.assign(year_1960, 'Departamento', dep_1960)
+year_1960 = fx.assign(year_1960, 'CP - Numero', num_1960)
+
+year_1960 = fx.rearrange(year_1960, 'Oficina', 0)
+year_1960 = fx.rearrange(year_1960, 'Departamento', 1)
+year_1960 = fx.rearrange(year_1960, 'CP - Numero', 2)
+
+year_1960 = fx.checkTotalLP(year_1960)
+
+fx.export(year_1960, '1960_clean')
 
 #    (_    /_\    _)
 #    / `'--) (--'` \

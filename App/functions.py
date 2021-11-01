@@ -33,11 +33,21 @@ def formatNumbers(df, col):
         row[col] = row[col].replace('•', '')
         row[col] = row[col].replace('%', '')
         row[col] = row[col].replace(':', '')
+        row[col] = row[col].replace(';', '')
         row[col] = row[col].replace(' ', '')
         row[col] = row[col].replace('I', '1')
         row[col] = row[col].replace('l', '1')
 
     return df
+
+
+def formatDecimal(lst): 
+    num = []
+    for i in lst:
+        i = i//10
+        num.append(i)
+
+    return num
 
 
 def numberCorrection(df):
