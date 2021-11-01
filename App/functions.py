@@ -21,6 +21,13 @@ def loadYearXLSX(path):
     return year
 
 
+def loadCleanYearCSV(path):
+
+    route = cf.export_dir.replace('/App', '') + path
+    year = pd.read_csv(route)
+    return year
+
+
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -159,6 +166,13 @@ def rearrange(df, name, pos):
 
     return df
 
+def createNewCol(df, name, value, pos): 
+    lst = [value]*len(df)
+
+    df = assign(df, name, value)
+    df = rearrange(df, name, pos)
+
+    return df
 
 '''
 COMPARE FUNCTIONS
@@ -178,8 +192,8 @@ EXPORT FUNCTIONS
 '''
 
 
-def export(df, name):
-    route = cf.export_dir.replace('/App', '')
+def exportYear(df, name):
+    route = cf.export_dir.replace('/App', '') + '/DANE/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
