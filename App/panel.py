@@ -23,7 +23,6 @@ merge_6 = fx.mergeYears(merge_5, year_1958)
 merge_7 = fx.mergeYears(merge_6, year_1959)
 merge_8 = fx.mergeYears(merge_7, year_1960)
 
-
 fx.exportPanel(merge_8, 'Panel')
 
 #    (_    /_\    _)
