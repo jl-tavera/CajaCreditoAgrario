@@ -186,6 +186,19 @@ def compareMun(lst1, lst2):
             diff.append(i)
     return diff
 
+'''
+MERGE FUNCTIONS
+'''
+
+def mergeYears(df1, df2): 
+    df = df1.copy()
+    df = df.append(df2, ignore_index=True)
+    df = df.sort_values(['Departamento', 'Oficina', 'Anio'])
+    df = df.drop('Unnamed: 0', 1)
+    df = df.reset_index()
+    df = df.drop('index', 1)
+
+    return df
 
 '''
 EXPORT FUNCTIONS
@@ -194,6 +207,12 @@ EXPORT FUNCTIONS
 
 def exportYear(df, name):
     route = cf.export_dir.replace('/App', '') + '/DANE/'
+    df.to_csv(route + str(name) + '.csv')
+
+    return None
+
+def exportPanel(df, name):
+    route = cf.export_dir.replace('/App', '') + '/Panel/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
