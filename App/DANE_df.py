@@ -216,8 +216,8 @@ year_1960 = fx.rearrange(year_1960, 'Oficina', 0)
 year_1960 = fx.rearrange(year_1960, 'Departamento', 1)
 year_1959 = fx.createNewCol(year_1960, 'Anio', 1960, 2)
 
-year_1959 = year_1959.drop('Check - Valor', 1)
-year_1959 = year_1959.drop('Check - Numero', 1)
+year_1960 = year_1960.drop('Check - Valor', 1)
+year_1960 = year_1960.drop('Check - Numero', 1)
 
 fx.exportYear(year_1960, '1960_clean')
 
