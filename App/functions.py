@@ -28,6 +28,17 @@ def loadCleanYearCSV(path):
     return year
 
 
+def loadIpcXLSX(path):
+    
+    route = cf.data_dir.replace('/App', '') + path  
+    ipc = pd.read_excel(route)
+    ipc = ipc.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return ipc
+
+
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -200,13 +211,38 @@ def mergeYears(df1, df2):
 
     return df
 
+
+'''
+DATA FUNCTIONS
+'''
+
+
+def nominalToRealValues(df, ipc, year):
+    col_names = ['Oficina', 'Departamento']
+
+    for i, row in ipc.iterrows():
+        if row['Anio'] == year: 
+            deft = row['Base 1952']
+            break 
+
+    for col in df.columns:
+        if (col not in col_names) and ('Valor' in col):
+            df[col].astype(float)
+            df[col] = df[col]/deft
+    
+    return df 
+        
+
 '''
 EXPORT FUNCTIONS
 '''
 
 
-def exportYear(df, name):
-    route = cf.export_dir.replace('/App', '') + '/DANE/'
+def exportYear(df, name, type):
+    if type == 'r':
+        route = cf.export_dir.replace('/App', '') + '/DANE/Real/'
+    else: 
+        route = cf.export_dir.replace('/App', '') + '/DANE/Nominal/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
