@@ -3,6 +3,9 @@ import functions as fx
 import pandas as pd
 import config as cf
 
+'''
+Nominal Panel Data
+'''
 
 year_1952 = fx.loadCleanYearCSV('DANE/1952_clean.csv')
 year_1953 = fx.loadCleanYearCSV('DANE/1953_clean.csv')
@@ -24,6 +27,12 @@ merge_7 = fx.mergeYears(merge_6, year_1959)
 merge_8 = fx.mergeYears(merge_7, year_1960)
 
 fx.exportPanel(merge_8, 'Panel')
+
+'''
+Real Panel Data
+'''
+
+
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
