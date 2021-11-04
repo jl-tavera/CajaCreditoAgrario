@@ -240,9 +240,9 @@ EXPORT FUNCTIONS
 
 def exportYear(df, name, type):
     if type == 'r':
-        route = cf.export_dir.replace('/App', '') + '/DANE/Real/'
+        route = cf.export_dir.replace('/App', '') + '/DANE/real/'
     else: 
-        route = cf.export_dir.replace('/App', '') + '/DANE/Nominal/'
+        route = cf.export_dir.replace('/App', '') + '/DANE/nominal/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
