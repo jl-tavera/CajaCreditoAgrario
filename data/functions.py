@@ -248,7 +248,7 @@ def exportYear(df, name, type):
     return None
 
 def exportPanel(df, name):
-    route = cf.export_dir.replace('/App', '') + '/Panel/'
+    route = cf.export_dir.replace('/App', '') + 'Panel/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
