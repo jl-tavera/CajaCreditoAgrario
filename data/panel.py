@@ -29,11 +29,6 @@ merge_8 = fx.mergeYears(merge_7, year_1960)
 
 fx.exportPanel(merge_8, 'panel')
 
-'''
-Real Panel Data
-'''
-
-
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
