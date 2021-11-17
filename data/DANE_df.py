@@ -255,11 +255,34 @@ DATA PREPARATION
 1962
 '''
 
-year_1962 = fx.loadYearCSV('DANE/1962.csv')
-
-year_1962 = fx.nameCorrection(year_1962)
+year_1962 = fx.loadYearXLSX('DANE/1962.xlsx')
 year_1962 = fx.numberCorrection(year_1962)
-year_1962 = fx.checkTotal(year_1962)
+
+mun_1962 = fx.getNames(year_1962, 'Oficina')
+mun_1962 = fx.formatName(mun_1962)
+
+dep_1962 = fx.getNames(year_1962, 'Departamento')
+dep_1962 = fx.formatName(dep_1962)
+
+cp_1962 = fx.getNames(year_1962, 'CP - Numero')
+cp_1962 = fx.formatDecimal(cp_1962)
+
+year_1962 = year_1962.drop('Oficina', 1)
+year_1962 = year_1962.drop('Departamento', 1)
+
+year_1962 = fx.assign(year_1962, 'CP - Numero', cp_1962)
+year_1962 = fx.assign(year_1962, 'Oficina', mun_1962)
+year_1962 = fx.assign(year_1962, 'Departamento', dep_1962)
+
+year_1962 = fx.rearrange(year_1962, 'Oficina', 0)
+year_1962 = fx.rearrange(year_1962, 'Departamento', 1)
+year_1962 = fx.rearrange(year_1962, 'CP - Valor', 3)
+year_1962 = fx.createNewCol(year_1962, 'Anio', 1962, 2)
+
+year_1962 = fx.checkTotalLP(year_1962)
+
+# year_1962 = year_1962.drop('Check - Valor', 1)
+# year_1962 = year_1962.drop('Check - Numero', 1)
 
 fx.exportYear(year_1962, '1962_i_clean', 'i')
 
