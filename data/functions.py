@@ -211,7 +211,12 @@ def mergeYears(df1, df2):
 
     return df
 
+def mergeStats(df1, df2): 
+    df = df1.copy()
+    df = df.append(df2, ignore_index=True)
+    df = df.sort_values(['Departamento', 'Anio'])
 
+    return df
 '''
 DATA FUNCTIONS
 '''
@@ -260,6 +265,12 @@ def exportYear(df, name, type):
 
 def exportPanel(df, name):
     route = cf.export_dir.replace('/App', '') + 'Panel/'
+    df.to_csv(route + str(name) + '.csv')
+
+    return None
+
+def exportPanel(df, name):
+    route = cf.export_dir.replace('/App', '') + 'Stats/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
