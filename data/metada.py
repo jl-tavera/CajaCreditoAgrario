@@ -3,7 +3,7 @@ import pandas as pd
 import functions as fx
 
 '''
-PIVOT TABLES
+DEPARTMENT
 '''
 
 year_1952 = fx.loadCleanYearCSV('DANE/stats/1952_S_clean.csv')
@@ -30,3 +30,32 @@ merge_9 = fx.mergeStats(merge_8, year_1961)
 merge_10 = fx.mergeStats(merge_9, year_1962)
 
 fx.exportPanel(merge_10, 'panel_departamental')
+
+panel = fx.loadPanelCSV('Stats/panel_departamental.csv')
+
+panel_CP_Numero = fx.pivotStats(panel, 'CP - Numero')
+panel_CP_Valor = fx.pivotStats(panel, 'CP - Valor')
+panel_MP_Numero = fx.pivotStats(panel, 'MP - Numero')
+panel_MP_Valor = fx.pivotStats(panel, 'MP - Valor')
+panel_LP_Numero = fx.pivotStats(panel, 'LP - Numero')
+panel_LP_Valor = fx.pivotStats(panel, 'LP - Valor')
+panel_T_Numero = fx.pivotStats(panel, 'T - Numero')
+panel_T_Valor = fx.pivotStats(panel, 'T - Valor')
+
+fx.exportPanel(panel_CP_Numero, 'CP - Numero')
+fx.exportPanel(panel_CP_Valor, 'CP - Valor')
+fx.exportPanel(panel_MP_Numero, 'MP - Numero')
+fx.exportPanel(panel_MP_Valor, 'MP - Valor')
+fx.exportPanel(panel_LP_Numero, 'LP - Numero')
+fx.exportPanel(panel_LP_Valor, 'LP - Valor')
+fx.exportPanel(panel_T_Numero, 'T - Numero')
+fx.exportPanel(panel_T_Valor, 'T - Valor')
+
+
+
+
+
+#    (_    /_\    _)
+#    / `'--) (--'` \
+#   /  _,-'\_/'-,_  \
+#  /.-'     "     '-.\

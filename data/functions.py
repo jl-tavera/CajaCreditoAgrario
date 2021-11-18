@@ -38,6 +38,16 @@ def loadIpcXLSX(path):
 
     return ipc
 
+def loadPanelCSV(path):
+    
+    route = cf.export_dir.replace('/App', '') + path  
+    panel = pd.read_csv(route)
+    panel = panel.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return panel
+
 
 '''
 FORMAT & CLEANING FUNCTIONS
@@ -217,6 +227,21 @@ def mergeStats(df1, df2):
     df = df.sort_values(['Departamento', 'Anio'])
 
     return df
+
+'''
+PIVOT FUNCTIONS
+'''
+
+def pivotStats(df, var): 
+    df = pd.pivot_table(
+            df,
+            values = var, 
+            index=['Departamento'], 
+            columns = 'Anio').reset_index()
+
+    return df
+
+
 '''
 DATA FUNCTIONS
 '''
