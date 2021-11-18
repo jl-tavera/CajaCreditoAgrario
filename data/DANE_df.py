@@ -281,7 +281,7 @@ year_1962 = year_1962.drop('Check - Numero', 1)
 
 fx.exportYear(year_1962, '1962_i_clean', 'i')
 
-print(fx.compareMun(year_1959, year_1962))
+print(fx.compareMun(mun_1960, mun_1962))
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
