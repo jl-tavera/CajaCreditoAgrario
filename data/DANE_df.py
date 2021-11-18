@@ -166,60 +166,60 @@ DATA PREPARATION
 1959
 '''
 
-# year_1959 = fx.loadYearXLSX('DANE/1959.xlsx')
+year_1959 = fx.loadYearXLSX('DANE/1959.xlsx')
 
-# year_1959 = fx.numberCorrection(year_1959)
-# year_1959 = fx.checkTotalLP(year_1959)
+year_1959 = fx.numberCorrection(year_1959)
+year_1959 = fx.checkTotalLP(year_1959)
 
-# mun_1959 = fx.getNames(year_1959, 'Oficina')
-# mun_1959 = fx.formatName(mun_1959)
+mun_1959 = fx.getNames(year_1959, 'Oficina')
+mun_1959 = fx.formatName(mun_1959)
 
-# dep_1959 = fx.getNames(year_1959, 'Departamento')
-# dep_1959 = fx.formatName(dep_1959)
+dep_1959 = fx.getNames(year_1959, 'Departamento')
+dep_1959 = fx.formatName(dep_1959)
 
-# year_1959 = year_1959.drop('Oficina', 1)
-# year_1959 = year_1959.drop('Departamento', 1)
+year_1959 = year_1959.drop('Oficina', 1)
+year_1959 = year_1959.drop('Departamento', 1)
 
-# year_1959 = fx.assign(year_1959, 'Oficina', mun_1959)
-# year_1959 = fx.assign(year_1959, 'Departamento', dep_1959)
+year_1959 = fx.assign(year_1959, 'Oficina', mun_1959)
+year_1959 = fx.assign(year_1959, 'Departamento', dep_1959)
 
-# year_1959 = fx.rearrange(year_1959, 'Oficina', 0)
-# year_1959 = fx.rearrange(year_1959, 'Departamento', 1)
-# year_1959 = fx.createNewCol(year_1959, 'Anio', 1959, 2)
+year_1959 = fx.rearrange(year_1959, 'Oficina', 0)
+year_1959 = fx.rearrange(year_1959, 'Departamento', 1)
+year_1959 = fx.createNewCol(year_1959, 'Anio', 1959, 2)
 
-# year_1959 = year_1959.drop('Check - Valor', 1)
-# year_1959 = year_1959.drop('Check - Numero', 1)
+year_1959 = year_1959.drop('Check - Valor', 1)
+year_1959 = year_1959.drop('Check - Numero', 1)
 
-# fx.exportYear(year_1959, '1959_i_clean', 'i')
+fx.exportYear(year_1959, '1959_i_clean', 'i')
 
 '''
 1960
 '''
 
-# year_1960 = fx.loadYearXLSX('DANE/1960.xlsx')
-# year_1960 = fx.numberCorrection(year_1960)
-# year_1960 = fx.checkTotalLP(year_1960)
+year_1960 = fx.loadYearXLSX('DANE/1960.xlsx')
+year_1960 = fx.numberCorrection(year_1960)
+year_1960 = fx.checkTotalLP(year_1960)
 
-# mun_1960 = fx.getNames(year_1960, 'Oficina')
-# mun_1960 = fx.formatName(mun_1960)
+mun_1960 = fx.getNames(year_1960, 'Oficina')
+mun_1960 = fx.formatName(mun_1960)
 
-# dep_1960 = fx.getNames(year_1960, 'Departamento')
-# dep_1960 = fx.formatName(dep_1960)
+dep_1960 = fx.getNames(year_1960, 'Departamento')
+dep_1960 = fx.formatName(dep_1960)
 
-# year_1960 = year_1960.drop('Oficina', 1)
-# year_1960 = year_1960.drop('Departamento', 1)
+year_1960 = year_1960.drop('Oficina', 1)
+year_1960 = year_1960.drop('Departamento', 1)
 
-# year_1960 = fx.assign(year_1960, 'Oficina', mun_1960)
-# year_1960 = fx.assign(year_1960, 'Departamento', dep_1960)
+year_1960 = fx.assign(year_1960, 'Oficina', mun_1960)
+year_1960 = fx.assign(year_1960, 'Departamento', dep_1960)
 
-# year_1960 = fx.rearrange(year_1960, 'Oficina', 0)
-# year_1960 = fx.rearrange(year_1960, 'Departamento', 1)
-# year_1960 = fx.createNewCol(year_1960, 'Anio', 1960, 2)
+year_1960 = fx.rearrange(year_1960, 'Oficina', 0)
+year_1960 = fx.rearrange(year_1960, 'Departamento', 1)
+year_1960 = fx.createNewCol(year_1960, 'Anio', 1960, 2)
 
-# year_1960 = year_1960.drop('Check - Valor', 1)
-# year_1960 = year_1960.drop('Check - Numero', 1)
+year_1960 = year_1960.drop('Check - Valor', 1)
+year_1960 = year_1960.drop('Check - Numero', 1)
 
-# fx.exportYear(year_1960, '1960_i_clean', 'i')
+fx.exportYear(year_1960, '1960_i_clean', 'i')
 
 
 '''
@@ -264,27 +264,24 @@ mun_1962 = fx.formatName(mun_1962)
 dep_1962 = fx.getNames(year_1962, 'Departamento')
 dep_1962 = fx.formatName(dep_1962)
 
-cp_1962 = fx.getNames(year_1962, 'CP - Numero')
-cp_1962 = fx.formatDecimal(cp_1962)
-
 year_1962 = year_1962.drop('Oficina', 1)
 year_1962 = year_1962.drop('Departamento', 1)
 
-year_1962 = fx.assign(year_1962, 'CP - Numero', cp_1962)
 year_1962 = fx.assign(year_1962, 'Oficina', mun_1962)
 year_1962 = fx.assign(year_1962, 'Departamento', dep_1962)
 
 year_1962 = fx.rearrange(year_1962, 'Oficina', 0)
 year_1962 = fx.rearrange(year_1962, 'Departamento', 1)
-year_1962 = fx.rearrange(year_1962, 'CP - Valor', 3)
 year_1962 = fx.createNewCol(year_1962, 'Anio', 1962, 2)
 
 year_1962 = fx.checkTotalLP(year_1962)
 
-# year_1962 = year_1962.drop('Check - Valor', 1)
-# year_1962 = year_1962.drop('Check - Numero', 1)
+year_1962 = year_1962.drop('Check - Valor', 1)
+year_1962 = year_1962.drop('Check - Numero', 1)
 
 fx.exportYear(year_1962, '1962_i_clean', 'i')
+
+print(fx.compareMun(year_1959, year_1962))
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
