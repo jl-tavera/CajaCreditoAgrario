@@ -233,6 +233,15 @@ def nominalToRealValues(df, ipc, year):
     return df 
         
 
+def statsDepartment(df): 
+    col_names = []
+    for col in df.columns: 
+        if col != 'Anio': 
+            col_names.append(col)
+    df_stats = df.groupby(['Departamento'])[col_names].sum()
+
+    return df_stats
+
 '''
 EXPORT FUNCTIONS
 '''
@@ -241,8 +250,10 @@ EXPORT FUNCTIONS
 def exportYear(df, name, type):
     if type == 'r':
         route = cf.export_dir.replace('/App', '') + '/DANE/real/'
-    else: 
+    if type == 'i': 
         route = cf.export_dir.replace('/App', '') + '/DANE/nominal/'
+    if type == 's': 
+        route = cf.export_dir.replace('/App', '') + 'DANE/stats/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
@@ -252,6 +263,9 @@ def exportPanel(df, name):
     df.to_csv(route + str(name) + '.csv')
 
     return None
+
+
+
 
 
 #    (_    /_\    _)

@@ -273,15 +273,18 @@ year_1962 = fx.assign(year_1962, 'Departamento', dep_1962)
 year_1962 = fx.rearrange(year_1962, 'Oficina', 0)
 year_1962 = fx.rearrange(year_1962, 'Departamento', 1)
 year_1962 = fx.createNewCol(year_1962, 'Anio', 1962, 2)
-
 year_1962 = fx.checkTotalLP(year_1962)
 
 year_1962 = year_1962.drop('Check - Valor', 1)
 year_1962 = year_1962.drop('Check - Numero', 1)
 
+stats_1962 = fx.statsDepartment(year_1962)
+stats_1962 = fx.createNewCol(stats_1962, 'Anio', 1962, 0)
+
+fx.exportYear(stats_1962, '1962_s_clean', 's')
 fx.exportYear(year_1962, '1962_i_clean', 'i')
 
-print(fx.compareMun(mun_1960, mun_1962))
+
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
