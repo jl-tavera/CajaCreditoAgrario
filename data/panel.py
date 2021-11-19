@@ -17,6 +17,7 @@ year_1958 = fx.loadCleanYearCSV('DANE/real/1958_r_clean.csv')
 year_1959 = fx.loadCleanYearCSV('DANE/real/1959_r_clean.csv')
 year_1960 = fx.loadCleanYearCSV('DANE/real/1960_r_clean.csv')
 year_1961 = fx.loadCleanYearCSV('DANE/real/1961_r_clean.csv')
+year_1962 = fx.loadCleanYearCSV('DANE/real/1962_r_clean.csv')
 
 merge_1 = fx.mergeYears(year_1952, year_1953)
 merge_2 = fx.mergeYears(merge_1, year_1954)
@@ -26,8 +27,11 @@ merge_5 = fx.mergeYears(merge_4, year_1957)
 merge_6 = fx.mergeYears(merge_5, year_1958)
 merge_7 = fx.mergeYears(merge_6, year_1959)
 merge_8 = fx.mergeYears(merge_7, year_1960)
+merge_9 = fx.mergeYears(merge_8, year_1961)
+merge_10 = fx.mergeYears(merge_9, year_1962)
 
-fx.exportPanel(merge_8, 'panel')
+fx.exportPanelXLSX(merge_10, 'panel')
+
 
 
 #    (_    /_\    _)

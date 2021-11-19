@@ -3,7 +3,7 @@ import pandas as pd
 import functions as fx
 
 '''
-DEPARTMENT
+DEPARTMENT PANEL
 '''
 
 year_1952 = fx.loadCleanYearCSV('DANE/stats/1952_S_clean.csv')
@@ -32,6 +32,10 @@ merge_10 = fx.mergeStats(merge_9, year_1962)
 fx.exportPanel(merge_10, 'panel_departamental')
 
 panel = fx.loadPanelCSV('Stats/panel_departamental.csv')
+
+'''
+PIVOT TABLES
+'''
 
 panel_CP_Numero = fx.pivotStats(panel, 'CP - Numero')
 panel_CP_Valor = fx.pivotStats(panel, 'CP - Valor')

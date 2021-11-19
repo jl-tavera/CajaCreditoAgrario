@@ -99,6 +99,15 @@ year_1961 = fx.nominalToRealValues(year_1961, ipc, 1961)
 
 fx.exportYear(year_1961, '1961_r_clean', 'r')
 
+'''
+1961
+'''
+
+year_1962 = fx.loadCleanYearCSV('DANE/nominal/1962_i_clean.csv')
+year_1962 = fx.nominalToRealValues(year_1962, ipc, 1962)
+
+fx.exportYear(year_1962, '1962_r_clean', 'r')
+
 
 
 

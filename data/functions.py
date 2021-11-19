@@ -49,6 +49,16 @@ def loadPanelCSV(path):
     return panel
 
 
+def loadDIVIPOLA(path):
+    
+    route = cf.data_dir.replace('/App', '') + path  
+    divipola = pd.read_csv(route)
+    divipola = divipola.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return divipola
+
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -195,6 +205,14 @@ def createNewCol(df, name, value, pos):
 
     return df
 
+def nameDepYearID(df): 
+    df['id'] = df['Departamento'].astype(str) + df['Oficina'].astype(str)
+    return df
+
+def nameDepID(df): 
+    df['id'] = df['Nombre Departamento'].astype(str) + df['Nombre Municipio'].astype(str)
+    return df
+
 '''
 COMPARE FUNCTIONS
 '''
@@ -206,6 +224,19 @@ def compareMun(lst1, lst2):
         if i not in lst2:
             diff.append(i)
     return diff
+
+def compareDIVIPOLA(df1,df2): 
+    df1['id'] = df1['Departamento'].astype(str) + df1['Oficina'].astype(str)
+    df2['id'] = df2['Nombre Departamento'].astype(str) + df2['Nombre Municipio'].astype(str)
+
+    id_divipola = getNames(df2, 'id')
+    id_divipola = formatName(id_divipola)
+
+    id_panel = getNames(df1, 'id')
+    compare = compareMun(id_panel, id_divipola)
+    compare = list(dict.fromkeys(compare))
+
+    return compare
 
 '''
 MERGE FUNCTIONS
@@ -227,6 +258,7 @@ def mergeStats(df1, df2):
     df = df.sort_values(['Departamento', 'Anio'])
 
     return df
+
 
 '''
 PIVOT FUNCTIONS
@@ -272,6 +304,7 @@ def statsDepartment(df):
 
     return df_stats
 
+        
 '''
 EXPORT FUNCTIONS
 '''
@@ -288,15 +321,15 @@ def exportYear(df, name, type):
 
     return None
 
-def exportPanel(df, name):
+def exportPanelCSV(df, name):
     route = cf.export_dir.replace('/App', '') + 'Panel/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
 
-def exportPanel(df, name):
+def exportPanelXLSX(df, name):
     route = cf.export_dir.replace('/App', '') + 'Stats/'
-    df.to_csv(route + str(name) + '.csv')
+    df.to_excel(route + str(name) + '.xlsx')
 
     return None
 
