@@ -275,6 +275,9 @@ def joinCode(panel, year):
     year = nameDepYearID(year)
 
     merge = pd.merge(panel, year)
+    merge = merge.drop('Unnamed: 0', 1)
+    merge = merge.drop('Unnamed: 0.1', 1)
+    merge = merge.drop('id', 1)
 
     return merge
 
@@ -365,9 +368,6 @@ def exportCodeYearsCSV(df, name):
     df.to_csv(route + str(name) + '.csv')
 
     return None
-
-
-
 
 
 #    (_    /_\    _)
