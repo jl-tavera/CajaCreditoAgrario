@@ -9,6 +9,12 @@ CHOROLOPLETH MAP CREATION
 '''
 
 map = am.loadGEOJSON('GeoJSON/Municipios.shp')
-panel = am.loadPanel('Panel/panel_input.xlsx')
+am.exportPanelXLSX(map, 'mapa')
 
-am.exportPanelXLSX(panel, 'panel_id.xlsx')
+
+year_1952 = am.loadCodesCSV('Final/Years/year_1952_codes.csv')
+year_1952 = am.pivotStats(year_1952, 'T - Numero')
+
+merge_1952 = pd.concat(year_1952, map)
+
+
