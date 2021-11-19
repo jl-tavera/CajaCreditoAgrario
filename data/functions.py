@@ -48,6 +48,12 @@ def loadPanelCSV(path):
 
     return panel
 
+def loadPanelXLSX(path): 
+    route = cf.data_dir.replace('/App', '') + path
+    panel = pd.read_excel(route)
+
+    return panel
+
 
 def loadDIVIPOLA(path):
     
@@ -211,6 +217,7 @@ def nameDepYearID(df):
 
 def nameDepID(df): 
     df['id'] = df['Nombre Departamento'].astype(str) + df['Nombre Municipio'].astype(str)
+    df["id"].str[:-1]
     return df
 
 '''
@@ -259,6 +266,17 @@ def mergeStats(df1, df2):
 
     return df
 
+def joinCode(panel, year): 
+    panel = nameDepYearID(panel)
+    panel.drop_duplicates(subset ="id",
+                     keep = 'last', inplace = True)
+
+    panel = panel[['Cod Dep', 'Cod Mun', 'id']]
+    year = nameDepYearID(year)
+
+    merge = pd.merge(panel, year)
+
+    return merge
 
 '''
 PIVOT FUNCTIONS
@@ -269,6 +287,15 @@ def pivotStats(df, var):
             df,
             values = var, 
             index=['Departamento'], 
+            columns = 'Anio').reset_index()
+
+    return df
+
+def pivotPanel(df, var): 
+    df = pd.pivot_table(
+            df,
+            values = var, 
+            index=['Oficina'], 
             columns = 'Anio').reset_index()
 
     return df
@@ -330,6 +357,12 @@ def exportPanelCSV(df, name):
 def exportPanelXLSX(df, name):
     route = cf.export_dir.replace('/App', '') + 'Stats/'
     df.to_excel(route + str(name) + '.xlsx')
+
+    return None
+
+def exportCodeYearsCSV(df, name):
+    route = cf.export_dir.replace('/App', '') + 'Final/Years/'
+    df.to_csv(route + str(name) + '.xlsx')
 
     return None
 

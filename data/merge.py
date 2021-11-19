@@ -1,18 +1,24 @@
 import pandas as pd
 import functions as fx
 
-divipola = fx.loadDIVIPOLA('DIVIPOLA/DIVIPOLA.csv')
-divipola = fx.nameDepID(divipola)
-
-panel = fx.loadPanelCSV('Panel/panel.csv')
-
 year_1952 = fx.loadCleanYearCSV('DANE/real/1952_r_clean.csv')
-year_1952 = fx.nameDepYearID(year_1952)
+year_1953 = fx.loadCleanYearCSV('DANE/real/1953_r_clean.csv')
+year_1954 = fx.loadCleanYearCSV('DANE/real/1954_r_clean.csv')
+year_1955 = fx.loadCleanYearCSV('DANE/real/1955_r_clean.csv')
+year_1956 = fx.loadCleanYearCSV('DANE/real/1956_r_clean.csv')
+year_1957 = fx.loadCleanYearCSV('DANE/real/1957_r_clean.csv')
+year_1958 = fx.loadCleanYearCSV('DANE/real/1958_r_clean.csv')
+year_1959 = fx.loadCleanYearCSV('DANE/real/1959_r_clean.csv')
+year_1960 = fx.loadCleanYearCSV('DANE/real/1960_r_clean.csv')
+year_1961 = fx.loadCleanYearCSV('DANE/real/1961_r_clean.csv')
+year_1962 = fx.loadCleanYearCSV('DANE/real/1962_r_clean.csv')
 
-compare = fx.compareDIVIPOLA(panel, divipola)
-merge = fx.mergeDIVIPOLA(divipola, year_1952)
+panel = fx.loadPanelXLSX('Panel/panel_input.xlsx')
+merge = fx.joinCode(panel, year_1952)
 
-fx.exportYear(merge, '1952_p', 's')
+fx.exportPanelXLSX(merge, 'merge_year_1952')
+
+
 
 
 

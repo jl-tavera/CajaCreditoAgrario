@@ -9,5 +9,6 @@ CHOROLOPLETH MAP CREATION
 '''
 
 map = am.loadGEOJSON('GeoJSON/Municipios.shp')
-map.plot()
-plt.show()
+panel = am.loadPanel('Panel/panel_input.xlsx')
+
+am.exportPanelXLSX(panel, 'panel_id.xlsx')

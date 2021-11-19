@@ -17,6 +17,13 @@ def loadPanel(path):
     panel = pd.read_excel(route)
 
     return panel
-'''
 
 '''
+EXPORT FUNCTIONS
+'''
+
+def exportPanelXLSX(df, name):
+    route = cf.export_dir.replace('/animations', '') 
+    df.to_excel(route + str(name) + '.xlsx')
+
+    return None

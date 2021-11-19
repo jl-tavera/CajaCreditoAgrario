@@ -46,14 +46,14 @@ panel_LP_Valor = fx.pivotStats(panel, 'LP - Valor')
 panel_T_Numero = fx.pivotStats(panel, 'T - Numero')
 panel_T_Valor = fx.pivotStats(panel, 'T - Valor')
 
-fx.exportPanel(panel_CP_Numero, 'CP - Numero')
-fx.exportPanel(panel_CP_Valor, 'CP - Valor')
-fx.exportPanel(panel_MP_Numero, 'MP - Numero')
-fx.exportPanel(panel_MP_Valor, 'MP - Valor')
-fx.exportPanel(panel_LP_Numero, 'LP - Numero')
-fx.exportPanel(panel_LP_Valor, 'LP - Valor')
-fx.exportPanel(panel_T_Numero, 'T - Numero')
-fx.exportPanel(panel_T_Valor, 'T - Valor')
+fx.exportPanelCSV(panel_CP_Numero, 'CP - Numero')
+fx.exportPanelCSV(panel_CP_Valor, 'CP - Valor')
+fx.exportPanelCSV(panel_MP_Numero, 'MP - Numero')
+fx.exportPanelCSV(panel_MP_Valor, 'MP - Valor')
+fx.exportPanelCSV(panel_LP_Numero, 'LP - Numero')
+fx.exportPanelCSV(panel_LP_Valor, 'LP - Valor')
+fx.exportPanelCSV(panel_T_Numero, 'T - Numero')
+fx.exportPanelCSV(panel_T_Valor, 'T - Valor')
 
 
 
