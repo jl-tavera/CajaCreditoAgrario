@@ -16,7 +16,7 @@ year_1962 = fx.loadCleanYearCSV('DANE/real/1962_r_clean.csv')
 panel = fx.loadPanelXLSX('Panel/panel_input.xlsx')
 merge = fx.joinCode(panel, year_1952)
 
-fx.exportPanelXLSX(merge, 'merge_year_1952')
+fx.exportCodeYearsCSV(merge, 'year_1952_codes')
 
 
 

@@ -355,14 +355,14 @@ def exportPanelCSV(df, name):
     return None
 
 def exportPanelXLSX(df, name):
-    route = cf.export_dir.replace('/App', '') + 'Stats/'
+    route = cf.export_dir.replace('/App', '') + 'Panel/'
     df.to_excel(route + str(name) + '.xlsx')
 
     return None
 
 def exportCodeYearsCSV(df, name):
     route = cf.export_dir.replace('/App', '') + 'Final/Years/'
-    df.to_csv(route + str(name) + '.xlsx')
+    df.to_csv(route + str(name) + '.csv')
 
     return None
 
