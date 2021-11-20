@@ -18,7 +18,7 @@ year_1952 = am.intColumn(year_1952, 1952)
 
 
 merge_1952 = pd.merge(year_1952, map, how = 'outer')
-merge_1952 = am.fillNA(merge_1952, 1952)
+merge_1952 = am.fillNA(merge_1952)
 
 
 merge_1962 = gpd.GeoDataFrame(merge_1952)
