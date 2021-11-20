@@ -51,7 +51,7 @@ chart = chart.append(year_1962)
 chart = am.fillNA(chart)
 chart = chart.set_index('Anio')
 
-bcr.bar_chart_race(df=chart, filename= None)
+bcr.bar_chart_race(df=chart, filename= 'BarChartRace.mp4')
 
 
 
