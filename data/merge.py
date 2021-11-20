@@ -25,7 +25,7 @@ merge_1958 = fx.joinCode(panel, year_1958)
 merge_1959 = fx.joinCode(panel, year_1959)
 merge_1960 = fx.joinCode(panel, year_1960)
 merge_1961 = fx.joinCode(panel, year_1961)
-merge_1962 = fx.joinCode(panel, year_1961)
+merge_1962 = fx.joinCode(panel, year_1962)
 
 fx.exportCodeYearsCSV(merge_1952, 'year_1952_codes')
 fx.exportCodeYearsCSV(merge_1953, 'year_1953_codes')
