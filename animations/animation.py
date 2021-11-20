@@ -25,6 +25,17 @@ def loadCodesCSV(path):
     return year
 
 '''
+DATA FUNCTIONS
+'''
+def fillNA(df, col): 
+    df[col] = df[col].fillna(0)
+    return df
+
+def intColumn(df, column): 
+    df[column] = df[column].astype(int)
+
+    return df
+'''
 PIVOT CODES
 '''
 
@@ -35,6 +46,7 @@ def pivotStats(df, var):
             index=['Cod Mun'], 
             columns = 'Anio').reset_index()
     df = df.rename({'Cod Mun': 'ID_ESPACIA'}, axis='columns')
+    df['ID_ESPACIA'] = df['ID_ESPACIA'].astype(int)
 
     return df
 

@@ -9,12 +9,39 @@ CHOROLOPLETH MAP CREATION
 '''
 
 map = am.loadGEOJSON('GeoJSON/Municipios.shp')
-am.exportPanelXLSX(map, 'mapa')
+map = am.intColumn(map, 'ID_ESPACIA')
 
 
 year_1952 = am.loadCodesCSV('Final/Years/year_1952_codes.csv')
 year_1952 = am.pivotStats(year_1952, 'T - Numero')
+year_1952 = am.intColumn(year_1952, 1952)
 
-merge_1952 = pd.concat(year_1952, map)
+
+merge_1952 = pd.merge(year_1952, map, how = 'outer')
+merge_1952 = am.fillNA(merge_1952, 1952)
 
 
+merge_1952 = gpd.GeoDataFrame(merge_1952)
+
+vmin, vmax = 0, 300
+fig = merge_1952.plot(column=1952, cmap='Purples', figsize=(10,10), linewidth=0.8, edgecolor='0.8', vmin=vmin, vmax=vmax, 
+                       legend=True, norm=plt.Normalize(vmin=vmin, vmax=vmax))
+
+# remove axis of chart
+fig.axis('off')
+    
+    # add a title
+fig.set_title('Número de Prestamos Caja Agraria por Municipio', \
+              fontdict={'fontsize': '25',
+                         'fontweight' : '3'})
+only_year = 1952
+    
+# position the annotation to the bottom left
+fig.annotate(only_year,
+            xy=(0.1, .225), xycoords='figure fraction',
+            horizontalalignment='left', verticalalignment='top',
+            fontsize=35)
+
+
+chart = fig.get_figure()
+chart.savefig( '1952', dpi=300)
