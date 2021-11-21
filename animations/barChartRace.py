@@ -51,7 +51,49 @@ chart = chart.append(year_1962)
 chart = am.fillNA(chart)
 chart = chart.set_index('Anio')
 
-bcr.bar_chart_race(df=chart, filename= 'BarChartRace.mp4')
+'''
+BAR CHART RACE
+'''
 
+
+bcr.bar_chart_race(
+    
+    df=chart, 
+
+    filename= 'output/Bar_Chart/BarChartRace.mp4',
+
+    steps_per_period= 150,
+
+    period_length=2000, 
+
+    period_label={'x': .95, 
+                'y': .15,
+                'ha': 'right',
+                'va': 'center',
+                'size': 16,
+                'weight': 'semibold',
+                'fontname': 'Ubuntu'
+                },
+
+    title={'label': 'Número de Prestamos por Departamento de la Caja Agraria',
+           'size': 9,
+           'weight': 'bold',
+           'fontname': 'Ubuntu'},
+
+    bar_kwargs={'alpha': .99, 
+                'lw': 0},
+
+    bar_label_font ={'fontname': 'Ubuntu'},
+
+
+    period_template='{x:.0f}',
+
+    )
+
+
+#    (_    /_\    _)
+#    / `'--) (--'` \
+#   /  _,-'\_/'-,_  \
+#  /.-'     "     '-.\
 
 

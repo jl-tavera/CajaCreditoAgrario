@@ -59,3 +59,7 @@ fig.annotate(only_year,
 chart = fig.get_figure()
 chart.savefig( '1962', dpi=300)
 
+#    (_    /_\    _)
+#    / `'--) (--'` \
+#   /  _,-'\_/'-,_  \
+#  /.-'     "     '-.\
