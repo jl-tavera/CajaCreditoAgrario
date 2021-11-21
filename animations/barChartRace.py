@@ -71,20 +71,14 @@ bcr.bar_chart_race(
                 'ha': 'right',
                 'va': 'center',
                 'size': 16,
-                'weight': 'semibold',
-                'fontname': 'Ubuntu'
-                },
+                'weight': 'semibold'},
 
     title={'label': 'Número de Prestamos por Departamento de la Caja Agraria',
            'size': 9,
-           'weight': 'bold',
-           'fontname': 'Ubuntu'},
+           'weight': 'bold',},
 
     bar_kwargs={'alpha': .99, 
                 'lw': 0},
-
-    bar_label_font ={'fontname': 'Ubuntu'},
-
 
     period_template='{x:.0f}',
 
