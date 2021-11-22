@@ -52,7 +52,7 @@ fx.exportYear(year_1955, '1955_r_clean', 'r')
 year_1956 = fx.loadCleanYearCSV('DANE/nominal/1956_i_clean.csv')
 year_1956 = fx.nominalToRealValues(year_1956, ipc, 1956)
 
-fx.exportYear(year_1953, '1956_r_clean', 'r')
+fx.exportYear(year_1956, '1956_r_clean', 'r')
 
 '''
 1957
@@ -79,7 +79,7 @@ fx.exportYear(year_1958, '1958_r_clean', 'r')
 year_1959 = fx.loadCleanYearCSV('DANE/nominal/1959_i_clean.csv')
 year_1959 = fx.nominalToRealValues(year_1959, ipc, 1959)
 
-fx.exportYear(year_1953, '1959_r_clean', 'r')
+fx.exportYear(year_1959, '1959_r_clean', 'r')
 
 '''
 1960
@@ -100,18 +100,13 @@ year_1961 = fx.nominalToRealValues(year_1961, ipc, 1961)
 fx.exportYear(year_1961, '1961_r_clean', 'r')
 
 '''
-1961
+1962
 '''
 
 year_1962 = fx.loadCleanYearCSV('DANE/nominal/1962_i_clean.csv')
 year_1962 = fx.nominalToRealValues(year_1962, ipc, 1962)
 
 fx.exportYear(year_1962, '1962_r_clean', 'r')
-
-
-
-
-
 
 
 #    (_    /_\    _)

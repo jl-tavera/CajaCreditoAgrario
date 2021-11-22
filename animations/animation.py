@@ -1,6 +1,7 @@
 import pandas as pd
 import geopandas as gpd
 import config as cf
+import matplotlib as plt
 
 '''
 LOADING FUNCTIONS
@@ -78,6 +79,36 @@ def exportPanelXLSX(df, name):
     df.to_excel(route + str(name) + '.xlsx')
 
     return None
+
+def titleMap(df, year, min, max): 
+    fig = df.plot(column=year, 
+                        cmap='Greens', 
+                        figsize=(8,8), 
+                        linewidth=0.8, 
+                        edgecolor='0.8', 
+                        vmin= min, 
+                        vmax= max, 
+                       legend=True, 
+                       norm= plt.colors.Normalize(vmin= min, vmax=max))
+
+    fig.axis('off')
+    fig.annotate(year,
+            xy=(0.1, .225), 
+            xycoords='figure fraction',
+            horizontalalignment='left', 
+            verticalalignment='top',
+            fontsize=36,
+            weight = 'bold')
+
+    chart = fig.get_figure()
+    chart.suptitle("Número de Prestamos por Municipio", 
+                fontsize =  25,
+                weight = 'bold')
+
+    path = 'output/Maps/Animation/' + str(year)
+    chart.savefig( path, dpi=300)
+
+    pass
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
