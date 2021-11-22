@@ -110,6 +110,32 @@ def titleMap(df, year, min, max):
 
     pass
 
+def untitledMap(df, year, min, max): 
+    fig = df.plot(column=year, 
+                        cmap='Greens', 
+                        figsize=(8,8), 
+                        linewidth=0.8, 
+                        edgecolor='0.8', 
+                        vmin= min, 
+                        vmax= max, 
+                       legend=True, 
+                       norm= plt.colors.Normalize(vmin= min, vmax=max))
+
+    fig.axis('off')
+    fig.annotate(year,
+            xy=(0.1, .225), 
+            xycoords='figure fraction',
+            horizontalalignment='left', 
+            verticalalignment='top',
+            fontsize=36,
+            weight = 'bold')
+
+    chart = fig.get_figure()
+    path = 'output/Maps/Subplot/' + str(year)
+    chart.savefig( path, dpi=300)
+
+    pass
+
 #    (_    /_\    _)
 #    / `'--) (--'` \
 #   /  _,-'\_/'-,_  \

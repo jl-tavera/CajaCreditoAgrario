@@ -30,7 +30,7 @@ merge_8 = fx.mergeYears(merge_7, year_1960)
 merge_9 = fx.mergeYears(merge_8, year_1961)
 merge_10 = fx.mergeYears(merge_9, year_1962)
 
-fx.exportPanelXLSX(merge_10, 'panel')
+fx.exportPanelCSV(merge_10, 'panel')
 
 
 

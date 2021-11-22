@@ -29,6 +29,7 @@ merge_1952 = am.fillNA(merge_1952)
 merge_1952 = gpd.GeoDataFrame(merge_1952)
 
 am.titleMap(merge_1952, 1952, 0, 3000)
+am.untitledMap(merge_1952, 1952, 0, 3000)
 
 '''
 1953
