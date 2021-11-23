@@ -45,6 +45,7 @@ merge_1953 = am.fillNA(merge_1953)
 merge_1953 = gpd.GeoDataFrame(merge_1953)
 
 am.titleMap(merge_1953, 1953, 0, 3200)
+am.untitledMap(merge_1953, 1953, 0, 3200)
 
 '''
 1954
@@ -60,6 +61,7 @@ merge_1954 = am.fillNA(merge_1954)
 merge_1954 = gpd.GeoDataFrame(merge_1954)
 
 am.titleMap(merge_1954, 1954, 0, 3400)
+am.untitledMap(merge_1954, 1954, 0, 3400)
 
 '''
 1955
@@ -75,7 +77,7 @@ merge_1955 = am.fillNA(merge_1955)
 merge_1955 = gpd.GeoDataFrame(merge_1955)
 
 am.titleMap(merge_1955, 1955, 0, 3500)
-
+am.untitledMap(merge_1955, 1955, 0, 3500)
 
 '''
 1956
@@ -91,6 +93,7 @@ merge_1956 = am.fillNA(merge_1956)
 merge_1956 = gpd.GeoDataFrame(merge_1956)
 
 am.titleMap(merge_1956, 1956, 0, 3700)
+am.untitledMap(merge_1956, 1956, 0, 3700)
 
 '''
 1957
@@ -106,6 +109,7 @@ merge_1957 = am.fillNA(merge_1957)
 merge_1957 = gpd.GeoDataFrame(merge_1957)
 
 am.titleMap(merge_1957, 1957, 0, 3000)
+am.untitledMap(merge_1957, 1957, 0, 3000)
 
 '''
 1958
@@ -121,7 +125,7 @@ merge_1958 = am.fillNA(merge_1958)
 merge_1958 = gpd.GeoDataFrame(merge_1958)
 
 am.titleMap(merge_1958, 1958, 0, 3700)
-
+am.untitledMap(merge_1958, 1958, 0, 3700)
 
 '''
 1959
@@ -137,6 +141,7 @@ merge_1959 = am.fillNA(merge_1959)
 merge_1959 = gpd.GeoDataFrame(merge_1959)
 
 am.titleMap(merge_1959, 1959, 0, 4200)
+am.untitledMap(merge_1959, 1959, 0, 4200)
 
 '''
 1960
@@ -152,6 +157,7 @@ merge_1960 = am.fillNA(merge_1960)
 merge_1960 = gpd.GeoDataFrame(merge_1960)
 
 am.titleMap(merge_1960, 1960, 0, 4400)
+am.untitledMap(merge_1960, 1960, 0, 4400)
 
 '''
 1962
@@ -167,6 +173,8 @@ merge_1962 = am.fillNA(merge_1962)
 merge_1962 = gpd.GeoDataFrame(merge_1962)
 
 am.titleMap(merge_1962, 1962, 0, 5000)
+am.untitledMap(merge_1962, 1962, 0, 5000)
+
 
 #    (_    /_\    _)
 #    / `'--) (--'` \
