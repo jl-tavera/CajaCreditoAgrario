@@ -269,6 +269,16 @@ def mergeYears(df1, df2):
 
     return df
 
+
+def mergeYearsCodes(df1, df2): 
+    df = df1.copy()
+    df = df.append(df2, ignore_index=True)
+    df = df.sort_values(['Departamento', 'cod_mpio', 'Anio'])
+    df = df.reset_index()
+    df = df.drop('index', 1)
+
+    return df
+
 def mergeStats(df1, df2): 
     df = df1.copy()
     df = df.append(df2, ignore_index=True)

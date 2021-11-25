@@ -34,6 +34,21 @@ norm_1960 = fx.normalizePopulation(year_1960, population, 1960)
 norm_1962 = fx.normalizePopulation(year_1962, population, 1962)
 
 '''
+MERGE PANEL 
+'''
+
+merge_1 = fx.mergeYearsCodes(norm_1952, norm_1953)
+merge_2 = fx.mergeYearsCodes(merge_1, norm_1954)
+merge_3 = fx.mergeYearsCodes(merge_2, norm_1955)
+merge_4 = fx.mergeYearsCodes(merge_3, norm_1956)
+merge_5 = fx.mergeYearsCodes(merge_4, norm_1957)
+merge_6 = fx.mergeYearsCodes(merge_5, norm_1958)
+merge_7 = fx.mergeYearsCodes(merge_6, norm_1959)
+merge_8 = fx.mergeYearsCodes(merge_7, norm_1960)
+merge_9 = fx.mergeYearsCodes(merge_8, norm_1962)
+
+
+'''
 EXPORT FILES
 '''
 
@@ -47,3 +62,4 @@ fx.exportFinalCSV(norm_1958, 'Population/1958')
 fx.exportFinalCSV(norm_1959, 'Population/1959')
 fx.exportFinalCSV(norm_1960, 'Population/1960')
 fx.exportFinalCSV(norm_1962, 'Population/1962')
+fx.exportFinalCSV(merge_9, 'Panel/Panel')
