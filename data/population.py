@@ -1,3 +1,4 @@
+from pandas.core.reshape.merge import merge
 import functions as fx
 import pandas as pd 
 
@@ -47,6 +48,11 @@ merge_7 = fx.mergeYearsCodes(merge_6, norm_1959)
 merge_8 = fx.mergeYearsCodes(merge_7, norm_1960)
 merge_9 = fx.mergeYearsCodes(merge_8, norm_1962)
 
+'''
+GROUPED DATA
+'''
+
+grouped = merge_9.groupby(['cod_mpio']).sum()
 
 '''
 EXPORT FILES
@@ -63,3 +69,4 @@ fx.exportFinalCSV(norm_1959, 'Population/1959')
 fx.exportFinalCSV(norm_1960, 'Population/1960')
 fx.exportFinalCSV(norm_1962, 'Population/1962')
 fx.exportFinalCSV(merge_9, 'Panel/Panel')
+fx.exportFinalCSV(grouped, 'Grouped/Grouped')
