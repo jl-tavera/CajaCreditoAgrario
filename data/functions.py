@@ -352,7 +352,6 @@ def normalizePopulation(df, population, year):
     df = df.rename(columns = {'Cod Mun': 'cod_mpio'})
     
     merge = pd.merge(df, population)
-    print(merge.shape)
 
     for col in df.columns:
         if (col not in col_names) and ('Valor' in col):
@@ -362,6 +361,9 @@ def normalizePopulation(df, population, year):
     
     merge = merge.reset_index()
     merge = merge.rename(columns = {year : 'Poblacion'})
+    merge = merge.drop("Unnamed: 0",axis=1)
+    merge = merge.drop("index",axis=1)
+
     merge = rearrange(merge, 'Poblacion', 5)
 
 
@@ -399,6 +401,12 @@ def exportPanelXLSX(df, name):
 
 def exportCodeYearsCSV(df, name):
     route = cf.export_dir.replace('/App', '') + 'Final/Years/'
+    df.to_csv(route + str(name) + '.csv')
+
+    return None
+
+def exportFinalCSV(df, name):
+    route = cf.export_dir.replace('/App', '') + 'Final/'
     df.to_csv(route + str(name) + '.csv')
 
     return None
