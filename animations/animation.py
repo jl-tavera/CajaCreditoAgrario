@@ -44,7 +44,10 @@ def intColumn(df, column):
 
     return df
 
+def sumRows(df): 
+    df2 = df.agg(df.agg(['sum']))
 
+    return df2
 '''
 PIVOT CODES
 '''

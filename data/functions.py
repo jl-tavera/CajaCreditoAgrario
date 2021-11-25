@@ -65,6 +65,16 @@ def loadDIVIPOLA(path):
 
     return divipola
 
+def loadPopulationXLSX(path):
+    
+    route = cf.data_dir.replace('/App', '') + path  
+    population = pd.read_excel(route)
+    population = population.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return population
+
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -334,6 +344,30 @@ def statsDepartment(df):
 
     return df_stats
 
+def normalizePopulation(df, population, year):
+    
+    col_names = ['Oficina', 'Departamento']
+    
+    population = population[['cod_mpio', year]]
+    df = df.rename(columns = {'Cod Mun': 'cod_mpio'})
+    
+    merge = pd.merge(df, population)
+    print(merge.shape)
+
+    for col in df.columns:
+        if (col not in col_names) and ('Valor' in col):
+            merge[col].astype(float)
+            merge[col] = merge[col]/merge[year]
+            merge[col] = merge[col].round(decimals=2)
+    
+    merge = merge.reset_index()
+    merge = merge.rename(columns = {year : 'Poblacion'})
+    merge = rearrange(merge, 'Poblacion', 5)
+
+
+    return merge
+    
+    
         
 '''
 EXPORT FUNCTIONS
