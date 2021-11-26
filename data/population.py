@@ -52,6 +52,13 @@ merge_9 = fx.mergeYearsCodes(merge_8, norm_1962)
 GROUPED DATA
 '''
 
+times = merge_9['cod_mpio'].value_counts()
+times = times.to_frame()
+times['codmpio'] = times.index
+times = times.reset_index()
+times = times.rename(columns={'cod_mpio': 'numero_prestamos'})
+times = times.drop('index', axis = 1)
+
 grouped = merge_9.groupby(['cod_mpio']).sum()
 
 '''
@@ -69,4 +76,5 @@ fx.exportFinalCSV(norm_1959, 'Population/1959')
 fx.exportFinalCSV(norm_1960, 'Population/1960')
 fx.exportFinalCSV(norm_1962, 'Population/1962')
 fx.exportFinalCSV(merge_9, 'Panel/Panel')
+fx.exportFinalCSV(times, 'Panel/times')
 fx.exportFinalCSV(grouped, 'Grouped/Grouped')

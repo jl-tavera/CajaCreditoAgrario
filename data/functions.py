@@ -75,6 +75,35 @@ def loadPopulationXLSX(path):
 
     return population
 
+def loadControlsXLSX(path):
+    
+    route = cf.data_dir.replace('/App', '') + path  
+    controls = pd.read_excel(route)
+    controls = controls.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return controls
+
+def loadGroupedCSV(path):
+    
+    route = cf.export_dir.replace('/App', '') + path  
+    controls = pd.read_csv(route)
+    controls = controls.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return controls
+
+def loadLiteracyXLSX(path):
+    
+    route = cf.data_dir.replace('/App', '') + path  
+    controls = pd.read_excel(route)
+    controls = controls.reset_index(
+            level=None, drop=False, inplace=False, 
+            col_level=0, col_fill= '')
+
+    return controls
 '''
 FORMAT & CLEANING FUNCTIONS
 '''
@@ -230,6 +259,11 @@ def nameDepID(df):
     df["id"].str[:-1]
     return df
 
+def intColumn(df, column): 
+    df[column] = df[column].astype(float)
+
+    return df
+
 '''
 COMPARE FUNCTIONS
 '''
@@ -254,6 +288,27 @@ def compareDIVIPOLA(df1,df2):
     compare = list(dict.fromkeys(compare))
 
     return compare
+
+def initialYear(controls, list_1952, list_1962):
+    dummy_mpio = []
+    for j in list_1962: 
+        if j not in list_1952: 
+            dummy_mpio.append(j)
+    
+    controls['tratamiento'] = 0
+
+    for i, row in controls.iterrows():
+        if row['codmpio'] in list_1952: 
+            controls = controls.drop(i)
+
+    for j, row in controls.iterrows():
+        if row['codmpio'] in dummy_mpio: 
+            controls.at[j, 'tratamiento'] = 1
+
+        
+    
+    return controls 
+
 
 '''
 MERGE FUNCTIONS
@@ -379,7 +434,25 @@ def normalizePopulation(df, population, year):
 
     return merge
     
-    
+def averagesFinal(df):
+    col_names = []
+    for col in df.columns:
+        if type(col) == str: 
+            if 'Valor' in col:
+                col_names.append(col)
+
+    for col in df.columns:
+        if (col in col_names )and ('T' not in col): 
+            prefix = col[:5]
+
+            df[prefix + str('Promedio')] = df[col]/ df['numero_prestamos']
+
+        elif (col in col_names )and ('T' in col): 
+            prefix = col[:4]
+
+            df[prefix + str('Promedio')] = df[col]/ df['numero_prestamos']
+
+    return df 
         
 '''
 EXPORT FUNCTIONS
