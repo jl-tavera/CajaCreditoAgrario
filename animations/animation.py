@@ -48,7 +48,19 @@ def sumRows(df):
     df2 = df.agg(df.agg(['sum']))
 
     return df2
-'''
+
+def neighborsMap(gdf): 
+
+    gdf["NEIGHBORS"] = None  
+
+    for index, mpio in gdf.iterrows():   
+
+        neighbors = gdf[~gdf.geometry.disjoint(mpio.geometry)].ID_ESPACIA.tolist()
+        neighbors = [ id_espacia for id_espacia in neighbors if mpio.ID_ESPACIA != id_espacia ]
+        gdf.at[index, "NEIGHBORS"] = ", ".join(neighbors)
+    
+    return gdf
+    '''
 PIVOT CODES
 '''
 

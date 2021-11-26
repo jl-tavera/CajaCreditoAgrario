@@ -1,6 +1,7 @@
 #%%
 import pandas as pd
 import geopandas as gpd
+from shapely.geometry.geo import mapping
 import animation as am
 import matplotlib.pyplot as plt
 
@@ -13,6 +14,7 @@ CHOROLOPLETH MAP CREATION
 '''
 
 map = am.loadGEOJSON('GeoJSON/Municipios.shp')
+map = am.neighborsMap(map)
 map = am.intColumn(map, 'ID_ESPACIA')
 
 '''
