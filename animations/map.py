@@ -14,8 +14,10 @@ CHOROLOPLETH MAP CREATION
 '''
 
 map = am.loadGEOJSON('GeoJSON/Municipios.shp')
-map = am.neighborsMap(map)
+neighbors = am.neighborsMap(map)
 map = am.intColumn(map, 'ID_ESPACIA')
+
+am.exportPanelXLSX(neighbors, 'Vecinos')
 
 '''
 1952

@@ -51,13 +51,15 @@ def sumRows(df):
 
 def neighborsMap(gdf): 
 
-    gdf["NEIGHBORS"] = None  
+    gdf["Vecinos"] = None  
 
     for index, mpio in gdf.iterrows():   
 
         neighbors = gdf[~gdf.geometry.disjoint(mpio.geometry)].ID_ESPACIA.tolist()
         neighbors = [ id_espacia for id_espacia in neighbors if mpio.ID_ESPACIA != id_espacia ]
-        gdf.at[index, "NEIGHBORS"] = ", ".join(neighbors)
+        gdf.at[index, "Vecinos"] = ", ".join(neighbors)
+    
+    gdf = gdf.loc[:, ['ID_ESPACIA', 'Vecinos']] 
     
     return gdf
     '''
