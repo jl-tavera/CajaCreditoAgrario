@@ -17,39 +17,59 @@ map = am.loadGEOJSON('GeoJSON/Municipios.shp')
 neighbors = am.neighborsMap(map)
 map = am.intColumn(map, 'ID_ESPACIA')
 
-am.exportPanelXLSX(neighbors, 'Vecinos')
+am.exportPanelXLSX(neighbors, 'Neighbors/Vecinos')
 
 '''
 1952
 '''
 
 year_1952 = am.loadCodesCSV('Final/Years/year_1952_codes.csv')
-year_1952 = am.pivotStats(year_1952, 'T - Numero')
-year_1952 = am.intColumn(year_1952, 1952)
 
-merge_1952 = pd.merge(year_1952, map, how = 'outer')
-merge_1952 = am.fillNA(merge_1952)
+year_1952_1 = am.pivotStats(year_1952, 'T - Numero')
+year_1952_1 = am.intColumn(year_1952_1, 1952)
 
-merge_1952 = gpd.GeoDataFrame(merge_1952)
+merge_1952_1 = pd.merge(year_1952_1, map, how = 'outer')
+merge_1952_1 = am.fillNA(merge_1952_1)
 
-am.titleMap(merge_1952, 1952, 0, 3000)
-am.untitledMap(merge_1952, 1952, 0, 3000)
+year_1952_2 = am.pivotStats(year_1952, 'T - Valor')
+year_1952_2 = am.intColumn(year_1952_2, 1952)
+
+merge_1952_2 = pd.merge(year_1952_2, map, how = 'outer')
+merge_1952_2 = am.fillNA(merge_1952_2)
+
+merge_1952_1 = gpd.GeoDataFrame(merge_1952_1)
+merge_1952_2 = gpd.GeoDataFrame(merge_1952_2)
+
+am.titleMap(merge_1952_1, 1952, 0, 3000)
+am.untitledMap(merge_1952_1, 1952, 0, 3000)
+
+am.titleMap2(merge_1952_2, 1952, 0, 850000000)
 
 '''
 1953
 '''
 
 year_1953 = am.loadCodesCSV('Final/Years/year_1953_codes.csv')
-year_1953 = am.pivotStats(year_1953, 'T - Numero')
-year_1953 = am.intColumn(year_1953, 1953)
 
-merge_1953 = pd.merge(year_1953, map, how = 'outer')
-merge_1953 = am.fillNA(merge_1953)
+year_1953_1 = am.pivotStats(year_1953, 'T - Numero')
+year_1953_1 = am.intColumn(year_1953_1, 1953)
 
-merge_1953 = gpd.GeoDataFrame(merge_1953)
+merge_1953_1 = pd.merge(year_1953_1, map, how = 'outer')
+merge_1953_1 = am.fillNA(merge_1953_1)
 
-am.titleMap(merge_1953, 1953, 0, 3200)
-am.untitledMap(merge_1953, 1953, 0, 3200)
+year_1953_2 = am.pivotStats(year_1953, 'T - Valor')
+year_1953_2 = am.intColumn(year_1953_2, 1953)
+
+merge_1953_2 = pd.merge(year_1953_2, map, how = 'outer')
+merge_1953_2 = am.fillNA(merge_1953_2)
+
+merge_1953_1 = gpd.GeoDataFrame(merge_1953_1)
+merge_1953_2 = gpd.GeoDataFrame(merge_1953_2)
+
+am.titleMap(merge_1953_1, 1953, 0, 3200)
+am.untitledMap(merge_1953_1, 1953, 0, 3200)
+
+am.titleMap2(merge_1953_2, 1953, 0, 850000000)
 
 '''
 1954

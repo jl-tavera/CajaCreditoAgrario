@@ -59,7 +59,8 @@ def neighborsMap(gdf):
         neighbors = [ id_espacia for id_espacia in neighbors if mpio.ID_ESPACIA != id_espacia ]
         gdf.at[index, "Vecinos"] = ", ".join(neighbors)
     
-    gdf = gdf.loc[:, ['ID_ESPACIA', 'Vecinos']] 
+    gdf =gdf.rename(columns = {'ID_ESPACIA': 'codmpio'})
+    gdf = gdf.loc[:, ['codmpio', 'Vecinos']] 
     
     return gdf
     '''
@@ -123,6 +124,36 @@ def titleMap(df, year, min, max):
                 weight = 'bold')
 
     path = 'output/Maps/Animation/' + str(year)
+    chart.savefig( path, dpi=300)
+
+    pass
+
+def titleMap2(df, year, min, max): 
+    fig = df.plot(column=year, 
+                        cmap='Greens', 
+                        figsize=(8,8), 
+                        linewidth=0.8, 
+                        edgecolor='0.8', 
+                        vmin= min, 
+                        vmax= max, 
+                       legend=True, 
+                       norm= plt.colors.Normalize(vmin= min, vmax=max))
+
+    fig.axis('off')
+    fig.annotate(year,
+            xy=(0.1, .225), 
+            xycoords='figure fraction',
+            horizontalalignment='left', 
+            verticalalignment='top',
+            fontsize=36,
+            weight = 'bold')
+
+    chart = fig.get_figure()
+    chart.suptitle("Valor de Prestamos por Municipio", 
+                fontsize =  25,
+                weight = 'bold')
+
+    path = 'output/Maps/Animation2/' + str(year)
     chart.savefig( path, dpi=300)
 
     pass
