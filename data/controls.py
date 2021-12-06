@@ -7,6 +7,7 @@ panel = fx.loadCleanYearCSV('Final/Panel/Panel.csv')
 times = fx.loadCleanYearCSV('Final/Panel/times.csv')
 controls = fx.loadControlsXLSX('Controls/controles.xlsx')
 literacy = fx.loadLiteracyXLSX('Literacy/Literacy.xlsx')
+education = fx.loadLiteracyXLSX('Education/cambio_educ.xlsx')
 
 
 grouped = fx.loadGroupedCSV('Final/Grouped/Grouped.csv')
@@ -49,8 +50,11 @@ merge3 = merge3.fillna(0)
 merge3 = fx.averagesFinal(merge3)
 merge3 = merge3.fillna(0)
 
+merge4 = pd.merge(education, merge3, on='codmpio', how='right')
+merge4 = merge4.fillna(0)
 
-fx.exportFinalCSV(merge3,'Regression/S_M')
+
+fx.exportFinalCSV(merge4,'Regression/Final.csv')
 
 
 
