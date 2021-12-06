@@ -54,7 +54,7 @@ merge4 = pd.merge(education, merge3, on='codmpio', how='right')
 merge4 = merge4.fillna(0)
 
 
-fx.exportFinalCSV(merge4,'Regression/Final.csv')
+fx.exportFinalCSV(merge4,'Regression/Final')
 
 
 
