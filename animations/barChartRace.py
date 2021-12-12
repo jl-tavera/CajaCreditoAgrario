@@ -44,53 +44,48 @@ chart = year_1952.append(year_1953)
 chart = am.sumRows(chart)
 
 chart = chart.append(year_1954)
-# chart = chart.append(year_1955)
-# chart = chart.append(year_1956)
-# chart = chart.append(year_1957)
-# chart = chart.append(year_1958)
-# chart = chart.append(year_1959)
-# chart = chart.append(year_1960)
-# chart = chart.append(year_1962)
-# chart = am.fillNA(chart)
-# chart = chart.set_index('Anio')
+chart = chart.append(year_1955)
+chart = chart.append(year_1956)
+chart = chart.append(year_1957)
+chart = chart.append(year_1958)
+chart = chart.append(year_1959)
+chart = chart.append(year_1960)
+chart = chart.append(year_1962)
+chart = am.fillNA(chart)
+chart = chart.set_index('Anio')
 
-# '''
-# BAR CHART RACE
-# '''
+'''
+BAR CHART RACE
+'''
 
 
-# bcr.bar_chart_race(
+bcr.bar_chart_race(
     
-#     df=chart, 
+    df=chart, 
 
-#     filename= 'output/Bar_Chart/BarChartRace.mp4',
+    filename= 'output/Bar_Chart/BarChartRace.mp4',
 
-#     steps_per_period= 150,
+    steps_per_period= 150,
 
-#     period_length=2000, 
+    period_length=2000, 
 
-#     period_label={'x': .95, 
-#                 'y': .15,
-#                 'ha': 'right',
-#                 'va': 'center',
-#                 'size': 16,
-#                 'weight': 'semibold'},
+    period_label={'x': .95, 
+                'y': .15,
+                'ha': 'right',
+                'va': 'center',
+                'size': 16,
+                'weight': 'semibold'},
 
-#     title={'label': 'Número de Prestamos por Departamento de la Caja Agraria',
-#            'size': 9,
-#            'weight': 'bold',},
+    title={'label': 'Número de Prestamos por Departamento de la Caja Agraria',
+           'size': 9,
+           'weight': 'bold',},
 
-#     bar_kwargs={'alpha': .99, 
-#                 'lw': 0},
+    bar_kwargs={'alpha': .99, 
+                'lw': 0},
 
-#     period_template='{x:.0f}',
+    period_template='{x:.0f}',
 
-#     )
+    )
 
-
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\
 
 

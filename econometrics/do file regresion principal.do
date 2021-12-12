@@ -1,11 +1,13 @@
 ssc install reghdfe
 ssc install ftools
 
+net install scheme-modern, from("https://raw.githubusercontent.com/mdroste/stata-scheme-modern/master/")
+
 clear all
 
-cd "C:\Users\santi\OneDrive - Universidad de los Andes\Documentos\Trabajos Economia Uniandes\2021-2 (sexto)\Historia económica de Colombia\Proyecto semestral\entrega final"
+cd "/Users/josetavera/Documents/HEC_Datos/input/Corte"
 
-import delimited "C:\Users\santi\OneDrive - Universidad de los Andes\Documentos\Trabajos Economia Uniandes\2021-2 (sexto)\Historia económica de Colombia\Proyecto semestral\entrega final\cortetransversal.csv"
+import delimited "/Users/josetavera/Documents/HEC_Datos/input/Corte/cortetransversal.csv"
 
 sort codmpio
 duplicates list codmpio

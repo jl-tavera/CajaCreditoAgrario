@@ -1,0 +1,2010 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\b\qc\line  }{\par}
+\fs20 {(MWFE estimator converged in 2 iterations)}\line
+\fs20 {note: 2.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 3.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 4.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 5.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 6.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 7.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 8.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 9.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 10.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 11.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 12.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 13.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 14.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 15.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#1b.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#2.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#3.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {HDFE Linear regression                            Number of obs   =      1,024}\line
+\fs20 {Absorbing 2 HDFE groups                           F(  46,    719) =       2.43}\line
+\fs20 {                                                  Prob > F        =     0.0000}\line
+\fs20 {                                                  R-squared       =     0.7927}\line
+\fs20 {                                                  Adj R-squared   =     0.7051}\line
+\fs20 {                                                  Within R-sq.    =     0.1345}\line
+\fs20 {                                                  Root MSE        =  5391.9658}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx1500
+\fs20\pard\intbl\ql { alf_a }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx2700
+\fs20\pard\intbl\ql { Coefficient}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx3900
+\fs20\pard\intbl\ql { Std.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx5100
+\fs20\pard\intbl\ql { err.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx6300
+\fs20\pard\intbl\ql { t}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx7500
+\fs20\pard\intbl\ql { P>t}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx8700
+\fs20\pard\intbl\ql { [95%}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx9900
+\fs20\pard\intbl\ql { conf.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx11100
+\fs20\pard\intbl\ql { interval]}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {vartrat }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 3260.521}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  901.371}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.620}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1490.887}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 5030.155}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {departamento#tendencia }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-2848.711}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3284.540}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -0.870}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.386}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-9297.146}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 3599.725}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-1.17e+04}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3304.518}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -3.540}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1.82e+04}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-5201.589}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#4  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-2.22e+04}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3304.518}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -6.710}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-2.87e+04}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1.57e+04}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20088.250}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3690.776}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.440}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12842.260}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27334.230}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17162.540}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3690.776}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.650}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 9916.554}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24408.520}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10247.980}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3650.378}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.810}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.005}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3081.306}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17414.650}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Atlántico#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {21263.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4443.343}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.790}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12540.180}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29987.130}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18621.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4443.343}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.190}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 9898.343}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27345.300}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 9870.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4402.522}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.240}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.025}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1227.333}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18514}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Bolívar#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17984.480}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3457.438}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.200}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11196.600}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24772.360}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15543.010}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3457.438}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.500}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8755.130}\cell
+\cellx8700
+\fs20\pard\intbl\ql {22330.890}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11526.870}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3419.964}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.370}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4812.565}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18241.180}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Boyacá#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {19289.240}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4425.530}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.360}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {10600.730}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27977.740}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17052.410}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4425.530}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.850}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8363.901}\cell
+\cellx8700
+\fs20\pard\intbl\ql {25740.910}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 7393.833}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4402.522}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.680}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.093}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1249.500}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16037.170}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Chocó#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15021.710}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3420.883}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.390}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8305.593}\cell
+\cellx8700
+\fs20\pard\intbl\ql {21737.820}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {13946.500}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3420.883}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.080}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 7230.389}\cell
+\cellx8700
+\fs20\pard\intbl\ql {20662.620}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 6819.054}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3400.999}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.010}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.045}\cell
+\cellx7500
+\fs20\pard\intbl\ql {  141.978}\cell
+\cellx8700
+\fs20\pard\intbl\ql {13496.130}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Cundinamarca#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17316.460}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4636.524}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.730}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8213.714}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26419.200}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15079.520}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4636.524}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.250}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 5976.780}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24182.270}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 8687.467}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4617.404}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.880}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.060}\cell
+\cellx7500
+\fs20\pard\intbl\ql { -377.738}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17752.670}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Huila#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {23360.160}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4256.250}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.490}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15004}\cell
+\cellx8700
+\fs20\pard\intbl\ql {31716.320}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20552.400}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4256.250}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.830}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12196.230}\cell
+\cellx8700
+\fs20\pard\intbl\ql {28908.560}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11071.810}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4242.376}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.610}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.009}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 2742.885}\cell
+\cellx8700
+\fs20\pard\intbl\ql {19400.730}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Magdalena#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {13782.150}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8258.256}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.670}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.096}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-2431.023}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29995.330}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10419.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8258.256}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.260}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.207}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-5793.357}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26633}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 7951.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8236.364}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.970}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.335}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-8218.530}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24121.860}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Meta#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20768.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3423.806}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.070}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {14046.800}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27490.510}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18254.290}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3423.806}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.330}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11532.440}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24976.140}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10559.060}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3384.245}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.120}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.002}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3914.877}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17203.240}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Nariño#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {22528.840}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3594.508}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.270}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15471.850}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29585.830}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {19518.270}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3594.508}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.430}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12461.290}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26575.260}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11556.560}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3570.917}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.240}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4545.892}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18567.230}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Norte de Santander#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {14720.990}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5400.330}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.730}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.007}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4118.692}\cell
+\cellx8700
+\fs20\pard\intbl\ql {25323.290}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {12687.660}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5400.330}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.350}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.019}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 2085.359}\cell
+\cellx8700
+\fs20\pard\intbl\ql {23289.960}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {5435}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.010}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.314}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-5150.878}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16020.880}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Quindio#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {25983.500}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.820}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15397.620}\cell
+\cellx8700
+\fs20\pard\intbl\ql {36569.380}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {22767.170}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.220}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12181.290}\cell
+\cellx8700
+\fs20\pard\intbl\ql {33353.050}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11553.670}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.140}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.032}\cell
+\cellx7500
+\fs20\pard\intbl\ql {  967.788}\cell
+\cellx8700
+\fs20\pard\intbl\ql {22139.550}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Risaralda#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20778.590}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3395.967}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.120}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {14111.390}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27445.780}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18143.300}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3395.967}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.340}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11476.100}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24810.500}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 9777.889}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3362.481}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.910}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.004}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3176.434}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16379.340}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Santander#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {16125.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6255.037}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.580}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.010}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3845.333}\cell
+\cellx8700
+\fs20\pard\intbl\ql {28405.970}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {14264.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6255.037}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.280}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.023}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1984.499}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26545.140}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 8404.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6226.106}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.350}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.177}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-3818.853}\cell
+\cellx8700
+\fs20\pard\intbl\ql {20628.190}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Sucre#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#1  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#2  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#3  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {_cons }\cell
+\cellx2700
+\fs20\pard\intbl\ql { -480.340}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 1426.959}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -0.340}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.737}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-3281.843}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 2321.163}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx8700\cell
+\row}
+\fs20 {Absorbed degrees of freedom:}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx1500
+\fs20\pard\intbl\ql {Absorbed FE }\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx2700
+\fs20\pard\intbl\ql {Categories}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx3900
+\fs20\pard\intbl\ql {-}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx5100
+\fs20\pard\intbl\ql {Redundant}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx6300
+\fs20\pard\intbl\ql {=}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx7500
+\fs20\pard\intbl\ql {Num.}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx8700
+\fs20\pard\intbl\ql {Coefs}\cell
+\row}
+{\par}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx2400
+\fs20\pard\intbl\ql {codmpio }\cell
+\cellx4400
+\fs20\pard\intbl\ql {256}\cell
+\cellx6400
+\fs20\pard\intbl\ql {0}\cell
+\cellx8400
+\fs20\pard\intbl\ql {256}\cell
+\row}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx2400
+\fs20\pard\intbl\ql {anio }\cell
+\cellx4400
+\fs20\pard\intbl\ql {4}\cell
+\cellx6400
+\fs20\pard\intbl\ql {1}\cell
+\cellx8400
+\fs20\pard\intbl\ql {3}\cell
+\row}
+
+{\b\qc\line  }{\par}
+\fs20 {(MWFE estimator converged in 2 iterations)}\line
+\fs20 {note: 2.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 3.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 4.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 5.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 6.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 7.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 8.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 9.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 10.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 11.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 12.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 13.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 14.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 15.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#1b.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#2.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#3.tendencia omitted because of collinearity}\line
+\fs20 {note: 16.departamento#4.tendencia omitted because of collinearity}\line
+\fs20 {HDFE Linear regression                            Number of obs   =      1,024}\line
+\fs20 {Absorbing 2 HDFE groups                           F(  46,    719) =       2.43}\line
+\fs20 {                                                  Prob > F        =     0.0000}\line
+\fs20 {                                                  R-squared       =     0.7927}\line
+\fs20 {                                                  Adj R-squared   =     0.7051}\line
+\fs20 {                                                  Within R-sq.    =     0.1345}\line
+\fs20 {                                                  Root MSE        =  5391.9658}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx1500
+\fs20\pard\intbl\ql { alf_a }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx2700
+\fs20\pard\intbl\ql { Coefficient}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx3900
+\fs20\pard\intbl\ql { Std.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx5100
+\fs20\pard\intbl\ql { err.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx6300
+\fs20\pard\intbl\ql { t}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx7500
+\fs20\pard\intbl\ql { P>t}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx8700
+\fs20\pard\intbl\ql { [95%}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx9900
+\fs20\pard\intbl\ql { conf.}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx11100
+\fs20\pard\intbl\ql { interval]}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {vartrat }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 3260.521}\cell
+\cellx3900
+\fs20\pard\intbl\ql {  901.371}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.620}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1490.887}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 5030.155}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {departamento#tendencia }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-2848.711}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3284.540}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -0.870}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.386}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-9297.146}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 3599.725}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-1.17e+04}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3304.518}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -3.540}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1.82e+04}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-5201.589}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Antioquia#4  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {-2.22e+04}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3304.518}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -6.710}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-2.87e+04}\cell
+\cellx8700
+\fs20\pard\intbl\ql {-1.57e+04}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20088.250}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3690.776}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.440}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12842.260}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27334.230}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17162.540}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3690.776}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.650}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 9916.554}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24408.520}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Atlántico#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10247.980}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3650.378}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.810}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.005}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3081.306}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17414.650}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Atlántico#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {21263.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4443.343}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.790}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12540.180}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29987.130}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18621.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4443.343}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.190}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 9898.343}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27345.300}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Bolívar#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 9870.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4402.522}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.240}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.025}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1227.333}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18514}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Bolívar#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17984.480}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3457.438}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.200}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11196.600}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24772.360}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15543.010}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3457.438}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.500}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8755.130}\cell
+\cellx8700
+\fs20\pard\intbl\ql {22330.890}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Boyacá#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11526.870}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3419.964}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.370}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4812.565}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18241.180}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Boyacá#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {19289.240}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4425.530}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.360}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {10600.730}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27977.740}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17052.410}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4425.530}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.850}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8363.901}\cell
+\cellx8700
+\fs20\pard\intbl\ql {25740.910}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Chocó#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 7393.833}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4402.522}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.680}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.093}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-1249.500}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16037.170}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Chocó#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15021.710}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3420.883}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.390}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8305.593}\cell
+\cellx8700
+\fs20\pard\intbl\ql {21737.820}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {13946.500}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3420.883}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.080}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 7230.389}\cell
+\cellx8700
+\fs20\pard\intbl\ql {20662.620}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Cundinamarca#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 6819.054}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3400.999}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.010}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.045}\cell
+\cellx7500
+\fs20\pard\intbl\ql {  141.978}\cell
+\cellx8700
+\fs20\pard\intbl\ql {13496.130}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Cundinamarca#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {17316.460}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4636.524}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.730}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 8213.714}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26419.200}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {15079.520}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4636.524}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.250}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 5976.780}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24182.270}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Huila#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 8687.467}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4617.404}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.880}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.060}\cell
+\cellx7500
+\fs20\pard\intbl\ql { -377.738}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17752.670}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Huila#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {23360.160}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4256.250}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.490}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15004}\cell
+\cellx8700
+\fs20\pard\intbl\ql {31716.320}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20552.400}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4256.250}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.830}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12196.230}\cell
+\cellx8700
+\fs20\pard\intbl\ql {28908.560}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Magdalena#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11071.810}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 4242.376}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.610}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.009}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 2742.885}\cell
+\cellx8700
+\fs20\pard\intbl\ql {19400.730}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Magdalena#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {13782.150}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8258.256}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.670}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.096}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-2431.023}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29995.330}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10419.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8258.256}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.260}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.207}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-5793.357}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26633}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Meta#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 7951.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 8236.364}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.970}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.335}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-8218.530}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24121.860}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Meta#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20768.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3423.806}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.070}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {14046.800}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27490.510}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18254.290}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3423.806}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.330}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11532.440}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24976.140}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Nariño#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {10559.060}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3384.245}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.120}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.002}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3914.877}\cell
+\cellx8700
+\fs20\pard\intbl\ql {17203.240}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Nariño#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {22528.840}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3594.508}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.270}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15471.850}\cell
+\cellx8700
+\fs20\pard\intbl\ql {29585.830}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {19518.270}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3594.508}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.430}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12461.290}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26575.260}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Norte de Santander#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11556.560}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3570.917}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    3.240}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.001}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4545.892}\cell
+\cellx8700
+\fs20\pard\intbl\ql {18567.230}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Norte de Santander#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {14720.990}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5400.330}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.730}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.007}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 4118.692}\cell
+\cellx8700
+\fs20\pard\intbl\ql {25323.290}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {12687.660}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5400.330}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.350}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.019}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 2085.359}\cell
+\cellx8700
+\fs20\pard\intbl\ql {23289.960}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Quindio#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {5435}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.010}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.314}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-5150.878}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16020.880}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Quindio#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {25983.500}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.820}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {15397.620}\cell
+\cellx8700
+\fs20\pard\intbl\ql {36569.380}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {22767.170}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    4.220}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {12181.290}\cell
+\cellx8700
+\fs20\pard\intbl\ql {33353.050}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Risaralda#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {11553.670}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 5391.966}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.140}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.032}\cell
+\cellx7500
+\fs20\pard\intbl\ql {  967.788}\cell
+\cellx8700
+\fs20\pard\intbl\ql {22139.550}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Risaralda#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {20778.590}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3395.967}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    6.120}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {14111.390}\cell
+\cellx8700
+\fs20\pard\intbl\ql {27445.780}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {18143.300}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3395.967}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    5.340}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.000}\cell
+\cellx7500
+\fs20\pard\intbl\ql {11476.100}\cell
+\cellx8700
+\fs20\pard\intbl\ql {24810.500}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Santander#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 9777.889}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 3362.481}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.910}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.004}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3176.434}\cell
+\cellx8700
+\fs20\pard\intbl\ql {16379.340}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Santander#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#1  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {16125.650}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6255.037}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.580}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.010}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 3845.333}\cell
+\cellx8700
+\fs20\pard\intbl\ql {28405.970}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#2  }\cell
+\cellx2700
+\fs20\pard\intbl\ql {14264.820}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6255.037}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    2.280}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.023}\cell
+\cellx7500
+\fs20\pard\intbl\ql { 1984.499}\cell
+\cellx8700
+\fs20\pard\intbl\ql {26545.140}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {Sucre#3  }\cell
+\cellx2700
+\fs20\pard\intbl\ql { 8404.667}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 6226.106}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    1.350}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.177}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-3818.853}\cell
+\cellx8700
+\fs20\pard\intbl\ql {20628.190}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Sucre#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#1  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#2  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#3  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2900
+\fs20\pard\intbl\ql {Tolima#4  }\cell
+\cellx5400
+\fs20\pard\intbl\ql {0}\cell
+\cellx7900
+\fs20\pard\intbl\ql {(omitted)}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql {}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {_cons }\cell
+\cellx2700
+\fs20\pard\intbl\ql { -480.340}\cell
+\cellx3900
+\fs20\pard\intbl\ql { 1426.959}\cell
+\cellx5100
+\fs20\pard\intbl\ql {   -0.340}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    0.737}\cell
+\cellx7500
+\fs20\pard\intbl\ql {-3281.843}\cell
+\cellx8700
+\fs20\pard\intbl\ql { 2321.163}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx8700\cell
+\row}
+\fs20 {Absorbed degrees of freedom:}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx1500
+\fs20\pard\intbl\ql {Absorbed FE }\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx2700
+\fs20\pard\intbl\ql {Categories}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx3900
+\fs20\pard\intbl\ql {-}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx5100
+\fs20\pard\intbl\ql {Redundant}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx6300
+\fs20\pard\intbl\ql {=}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx7500
+\fs20\pard\intbl\ql {Num.}\cell
+\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw25\brdrs\cellx8700
+\fs20\pard\intbl\ql {Coefs}\cell
+\row}
+{\par}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx2400
+\fs20\pard\intbl\ql {codmpio }\cell
+\cellx4400
+\fs20\pard\intbl\ql {256}\cell
+\cellx6400
+\fs20\pard\intbl\ql {0}\cell
+\cellx8400
+\fs20\pard\intbl\ql {256}\cell
+\row}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx2400
+\fs20\pard\intbl\ql {anio }\cell
+\cellx4400
+\fs20\pard\intbl\ql {4}\cell
+\cellx6400
+\fs20\pard\intbl\ql {1}\cell
+\cellx8400
+\fs20\pard\intbl\ql {3}\cell
+\row}
+
+
+\writepositionforappend
+}}
