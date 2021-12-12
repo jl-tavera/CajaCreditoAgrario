@@ -333,10 +333,3 @@ stats_1962 = fx.createNewCol(stats_1962, 'Anio', 1962, 0)
 
 fx.exportYear(stats_1962, '1962_s_clean', 's')
 fx.exportYear(year_1962, '1962_i_clean', 'i')
-
-
-
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\

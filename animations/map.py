@@ -209,9 +209,3 @@ merge_1962 = gpd.GeoDataFrame(merge_1962)
 
 am.titleMap(merge_1962, 1962, 0, 5000)
 am.untitledMap(merge_1962, 1962, 0, 5000)
-
-
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\

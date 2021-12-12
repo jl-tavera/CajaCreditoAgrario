@@ -271,6 +271,7 @@ def formatColumnZero(df):
 
     return df
 
+
 '''
 COMPARE FUNCTIONS
 '''
@@ -502,7 +503,3 @@ def exportFinalCSV(df, name):
     return None
 
 
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\

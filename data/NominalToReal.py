@@ -108,8 +108,3 @@ year_1962 = fx.nominalToRealValues(year_1962, ipc, 1962)
 
 fx.exportYear(year_1962, '1962_r_clean', 'r')
 
-
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\

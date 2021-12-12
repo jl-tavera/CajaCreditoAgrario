@@ -54,9 +54,3 @@ fx.exportPanelCSV(panel_LP_Numero, 'LP - Numero')
 fx.exportPanelCSV(panel_LP_Valor, 'LP - Valor')
 fx.exportPanelCSV(panel_T_Numero, 'T - Numero')
 fx.exportPanelCSV(panel_T_Valor, 'T - Valor')
-
-
-#    (_    /_\    _)
-#    / `'--) (--'` \
-#   /  _,-'\_/'-,_  \
-#  /.-'     "     '-.\
