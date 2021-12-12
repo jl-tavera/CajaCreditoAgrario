@@ -264,6 +264,13 @@ def intColumn(df, column):
 
     return df
 
+
+def formatColumnZero(df): 
+    for i, row in df.iterrows():
+        cod = str(row['Código Entidad'])
+
+    return df
+
 '''
 COMPARE FUNCTIONS
 '''
