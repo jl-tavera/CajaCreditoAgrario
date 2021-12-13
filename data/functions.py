@@ -271,6 +271,17 @@ def formatColumnZero(df):
 
     return df
 
+def format_2018(df): 
+    for i, row in df.iterrows():
+        data = row['alf_A2018']
+        data = data[1:-1]
+        data = data.replace(',', '.')
+        if data[0] == '.':
+            data = '0' + data
+        data = float(data)
+        df.at[i,'alf_A2018' ] = 100 - data
+    
+    return df
 
 '''
 COMPARE FUNCTIONS
